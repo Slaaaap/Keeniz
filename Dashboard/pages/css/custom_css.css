@@ -1,0 +1,33 @@
+.dashboard-container {
+  margin-top: 5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-container {
+  width: 50%;
+  border-right: 1px solid grey;
+  text-align: center;
+}
+
+.right-container {
+  width: 50%;
+  text-align: center;
+}
+
+.widget-slot {
+  padding: 5em;
+}
+
+.bg-complete-bis {
+	background-color: #ff7300c2;
+}
+
+.tile-pagination {
+  letter-spacing: 2px!important;
+  font-size: 20px!important;
+}
+
+.tile-pagination:hover {
+  cursor: pointer;
+}
