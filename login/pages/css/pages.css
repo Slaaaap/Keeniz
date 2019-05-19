@@ -3166,8 +3166,8 @@ Alternate buttons
 .btn-primary,
 .btn-primary:focus {
   color: #fff;
-  background-color: #09539F;
-  border-color: #09539F;
+  background-color: #053CC8;
+  border-color: #053CC8;
 }
 .btn-primary.active,
 .btn-primary:not(:disabled):not(.disabled):active,
@@ -3183,8 +3183,8 @@ Alternate buttons
 .btn-primary.hover,
 .btn-primary:hover,
 .show .dropdown-toggle.btn-primary {
-  background-color: #09539fc2;
-  border-color: #09539fc2;
+  background-color: #05309e;
+  border-color: #05309e;
   color: #fff;
 }
 .btn-primary.active:hover {
@@ -7276,7 +7276,7 @@ body.rtl .checkbox label::after {
   margin-bottom: 10px;
 }
 .form-group label:not(.error) {
-  font-family: 'Montserrat';
+  /*font-family: 'Montserrat';*/
   font-size: 10.5px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -10993,8 +10993,8 @@ Responsive Util
   margin: 30px auto;
 }
 
-.blueBg {
-  background-color: #0069d9; 
+.whiteBg {
+  background-color: #fff; 
 }
 
 .registerLogo {
@@ -11007,8 +11007,8 @@ Responsive Util
   justify-content: center;
 }
 
-.white {
-  color: white!important;
+.black {
+  color: black!important;
 }
 /* Responsive handlers : Login
 ------------------------------------
