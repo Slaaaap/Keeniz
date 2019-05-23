@@ -1706,7 +1706,7 @@ body.sidebar-visible .page-sidebar .sidebar-header .sidebar-header-controls {
 
 .page-sidebar {
   width: 280px;
-  background-color: #0069d9;
+  background-color: #053CC8;
   z-index: 1000;
   left: -210px;
   position: fixed;
@@ -1756,8 +1756,7 @@ body.sidebar-visible .page-sidebar .sidebar-header .sidebar-header-controls {
   display: block;
   height: 60px;
   line-height: 60px;
-  background-color: #005ec1;
-  border-bottom: 1px solid #005ec1;
+  background-color: #053CC8;
   color: #fff;
   width: 100%;
   padding: 0 20px;
@@ -3397,6 +3396,10 @@ hr.dotted {
   font-size: 16px !important;
 }
 
+.fs-20 {
+  font-size: 20px !important;
+}
+
 /* Line-heights
 ------------------------------------
 */
@@ -3559,7 +3562,7 @@ hr.dotted {
 
 .windows h4 {
   font-size: 23px;
-  line-height: 32px;
+  line-height: 20px;
 }
 
 .windows h5 {
@@ -5704,7 +5707,7 @@ body>.pgn-wrapper {
 .nav-tabs-simple:after {
   content: '';
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 24%;
   position: absolute;
   bottom: -2px;
   z-index: 120;
@@ -5722,7 +5725,7 @@ body>.pgn-wrapper {
   -webkit-backface-visibility: hidden;
   width: 100%;
   display: block;
-  background-color: #f55753;
+  background-color: #053CC8;
   height: 0px;
   content: '';
   left: 0;
@@ -10111,7 +10114,7 @@ div.cs-skin-slide .cs-options ul li span:hover, div.cs-skin-slide .cs-options ul
 
 .table thead tr th {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: bolder;
   font-family: 'Montserrat';
   font-size: 10.5px;
   letter-spacing: 0.06em;
@@ -10119,7 +10122,7 @@ div.cs-skin-slide .cs-options ul li span:hover, div.cs-skin-slide .cs-options ul
   padding-bottom: 14px;
   vertical-align: middle;
   border-bottom: 1px solid rgba(230, 230, 230, 0.7);
-  color: rgba(44, 44, 44, 0.35);
+  color: rgba(44, 44, 44, 0.94);
   border-top: none;
 }
 
@@ -14950,6 +14953,10 @@ Main components
   margin-top: 15px;
 }
 
+.m-t-12 {
+  margin-top: 12px;
+}
+
 .m-r-15 {
   margin-right: 15px;
 }
@@ -16908,4 +16915,108 @@ Main components
   flex-direction: column;
   justify-content: center;
   margin-top: -45px!important;
+}
+
+.selected-item {
+  color: #ff7300;
+}
+
+.dashboard-card {
+  width: 90%;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px -1px #bbbbbb6b;
+  margin: auto;
+}
+
+.dashboard-card-header {
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+}
+
+.dashboard-avatar {
+  width: 22%;
+}
+
+.dashboard-avatar img {
+  max-width: 100%;
+  margin: 0 20px;
+}
+
+.dashboard-card-body {
+  display: flex;
+}
+
+.dashboard-card-infos {
+  margin: -10px 0 0 40px;
+  width: 100%;
+  padding-right: 8px;
+}
+
+.dashboard-card-infos h4 {
+  margin-bottom: 0;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-row-ls {
+  display: flex;
+}
+
+.button-row-rs {
+  display: flex;
+}
+
+.button-row-ls button {
+  padding: 5px 10px;
+  margin: 0 2px;
+  color: #053CC8!important;
+  font-weight: bold;
+  background-color: #6484d44d!important;
+  border-color: #6484d44d!important;
+}
+
+.button-row-rs button {
+  padding: 5px 10px;
+  margin: 0 2px;
+  color: white!important;
+  background-color: #053CC8!important;
+  border-color: #053CC8!important;
+}
+
+.button-row-packs {
+  display: flex;
+  margin-left: 10px;
+}
+
+.button-row-packs button {
+  display: flex;
+  background-color: #053CC8!important;
+  border-color: #053CC8!important;
+  color: #fff!important;
+  margin: 0 10px;
+  padding: 5px 27px;
+}
+
+.td-thumbnail {
+  width: 35%;
+  height: 100%;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.m-t-70p {
+  margin-top: 61px;
+}
+
+.pagination {
+  float: right;
+  margin-top: 1em;
 }
