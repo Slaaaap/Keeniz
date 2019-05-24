@@ -3694,8 +3694,8 @@ Alternate buttons
 }
 
 .btn-primary.hover, .btn-primary:hover, .show .dropdown-toggle.btn-primary {
-  background-color: #8a7dbe;
-  border-color: #8a7dbe;
+  background-color: #053CC8;
+ /* border-color: #053CC8;*/
   color: #fff;
 }
 
@@ -5707,7 +5707,7 @@ body>.pgn-wrapper {
 .nav-tabs-simple:after {
   content: '';
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  width: 24%;
+  width: 265px;
   position: absolute;
   bottom: -2px;
   z-index: 120;
@@ -10151,9 +10151,7 @@ div.cs-skin-slide .cs-options ul li span:hover, div.cs-skin-slide .cs-options ul
   background: rgba(44, 44, 44, 0.07);
   display: inline-block;
   margin: 5px;
-  border-radius: 4px;
-  padding: 5px;
-  color: #62605a !important;
+  border-radius: 15px;
 }
 
 .table tbody tr td .btn-tag:hover {
@@ -16923,7 +16921,7 @@ Main components
 
 .dashboard-card {
   width: 90%;
-  height: 150px;
+  height: 165px;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0px 0px 20px -1px #bbbbbb6b;
@@ -17004,7 +17002,7 @@ Main components
 }
 
 .td-thumbnail {
-  width: 35%;
+  width: 25%;
   height: 100%;
 }
 
@@ -17013,10 +17011,70 @@ Main components
 }
 
 .m-t-70p {
-  margin-top: 61px;
+  margin-top: 39px;
 }
 
 .pagination {
   float: right;
   margin-top: 1em;
+}
+
+.rounded-l-corner {
+    border-top-left-radius: 20px;
+}
+
+.rounded-r-corner {
+    border-top-right-radius: 20px;
+}
+
+.bg-keeniz {
+    background-color: #053CC8;
+}
+
+.progress-tag {
+    background-color: transparent!important;
+    border: 2px solid green!important;
+    color: green!important;
+    font-weight: bold;
+    margin-top: -3px!important;
+}
+
+.over-tag {
+    background-color: transparent!important;
+    border: 2px solid red!important;
+    color: red!important;
+    font-weight: bold;
+    margin-top: -3px!important;
+}
+
+.tab-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-more {
+    min-width: 40px!important;
+    background-color: unset;
+    border-color: #00000012;
+    color: #000000ab;
+    font-weight: bold;
+}
+
+.m-t-m5 {
+    margin-top: -5px;
+}
+
+.tab-header-buttons {
+    display: flex;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.tab-header-buttons button {
+    display: flex;
+    background-color: #053CC8!important;
+    border-color: #053CC8!important;
+    color: #fff!important;
+    margin: 0 10px;
+    padding: 5px 27px;
 }
