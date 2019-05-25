@@ -3681,21 +3681,21 @@ Alternate buttons
 */
 
 .btn-primary, .btn-primary:focus {
-  color: #fff;
-  background-color: #6d5cae;
-  border-color: #6d5cae;
+  color: #000000ab;
+  background-color: transparent;
+  border-color: #00000012;
 }
 
 .btn-primary.active, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary.active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled):active:hover, .show .dropdown-toggle.btn-primary {
-  background-color: #584b8d;
-  border-color: #584b8d;
+  background-color: #fff;
+  border-color: #00000012;
   color: #fff;
   box-shadow: none;
 }
 
 .btn-primary.hover, .btn-primary:hover, .show .dropdown-toggle.btn-primary {
   background-color: #053CC8;
- /* border-color: #053CC8;*/
+  /* border-color: #053CC8;*/
   color: #fff;
 }
 
@@ -5707,7 +5707,7 @@ body>.pgn-wrapper {
 .nav-tabs-simple:after {
   content: '';
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  width: 265px;
+  width: 248px;
   position: absolute;
   bottom: -2px;
   z-index: 120;
@@ -10145,12 +10145,13 @@ div.cs-skin-slide .cs-options ul li span:hover, div.cs-skin-slide .cs-options ul
   border-top: 0px;
   padding: 20px;
   font-size: 13.5px;
+  vertical-align: middle;
 }
 
 .table tbody tr td .btn-tag {
   background: rgba(44, 44, 44, 0.07);
   display: inline-block;
-  margin: 5px;
+  margin: 0 5px;
   border-radius: 15px;
 }
 
@@ -16941,6 +16942,7 @@ Main components
 .dashboard-avatar img {
   max-width: 100%;
   margin: 0 20px;
+  border-radius: 50%;
 }
 
 .dashboard-card-body {
@@ -17006,6 +17008,11 @@ Main components
   height: 100%;
 }
 
+.td-thumbnail-collab {
+  width: 26%;
+  height: 100%;
+}
+
 .align-center {
   align-items: center;
 }
@@ -17020,61 +17027,110 @@ Main components
 }
 
 .rounded-l-corner {
-    border-top-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .rounded-r-corner {
-    border-top-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .bg-keeniz {
-    background-color: #053CC8;
+  background-color: #053CC8!important;
 }
 
 .progress-tag {
-    background-color: transparent!important;
-    border: 2px solid green!important;
-    color: green!important;
-    font-weight: bold;
-    margin-top: -3px!important;
+  background-color: transparent!important;
+  border: 2px solid green!important;
+  color: green!important;
+  font-weight: bold;
+  margin-top: -3px!important;
 }
 
 .over-tag {
-    background-color: transparent!important;
-    border: 2px solid red!important;
-    color: red!important;
-    font-weight: bold;
-    margin-top: -3px!important;
+  background-color: transparent!important;
+  border: 2px solid red!important;
+  color: red!important;
+  font-weight: bold;
+  margin-top: -3px!important;
 }
 
 .tab-header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn-more {
-    min-width: 40px!important;
-    background-color: unset;
-    border-color: #00000012;
-    color: #000000ab;
-    font-weight: bold;
+  min-width: 40px!important;
+  background-color: unset;
+  border-color: #00000012;
+  color: #000000ab;
+  font-weight: bold;
 }
 
 .m-t-m5 {
-    margin-top: -5px;
+  margin-top: -5px;
 }
 
 .tab-header-buttons {
-    display: flex;
-    height: 30px;
-    margin-top: 10px;
+  display: flex;
+  height: 30px;
+  margin-top: 10px;
 }
 
 .tab-header-buttons button {
-    display: flex;
-    background-color: #053CC8!important;
-    border-color: #053CC8!important;
-    color: #fff!important;
-    margin: 0 10px;
-    padding: 5px 27px;
+  display: flex;
+  background-color: #053CC8!important;
+  border-color: #053CC8!important;
+  color: #fff!important;
+  margin: 0 10px;
+  padding: 5px 27px;
+}
+
+.page-link {
+  color: #053CC8!important;
+}
+
+.page-item.active .page-link {
+  color: #fff!important;
+  background-color: #053CC8!important;
+  border-color: #053CC8!important;
+}
+
+.agency-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.agency-container img {
+  width: 25%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.more-agencies {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #0000003b;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding-top: 12px;
+}
+
+.more-agencies p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.more-agencies:hover {
+  cursor: pointer;
+}
+
+.btn-more-agencies {
+  height: 50%;
+}
+
+.cell-shrink {
+  width: 200px;
+  padding: 8px 0 20px 0 !important;
 }
