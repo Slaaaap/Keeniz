@@ -18419,3 +18419,11 @@ only screen and (min-device-pixel-ratio: 2) {
 .pay-right-part #payment {
   height: 100%;
 }
+
+.f-right {
+  float: right;
+  background-color: #053cc8 !important;
+  border-color: #053cc8 !important;
+  color: #fff !important;
+  padding: 7px 50px;
+}
