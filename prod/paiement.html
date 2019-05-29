@@ -179,13 +179,11 @@
                   <div class="ptp-rs">
                     <div class="ptp-rs-list">
                       <div class="ptp-rs-item">
-                        <i class="fas fa-times"></i>
-                        Publication d'une campagne : <b>Comme un parfum de naturel</b>
+                        <i class="fas fa-times"></i> Publication d'une campagne : <b>Comme un parfum de naturel</b>
                         <span>50€</span>
                       </div>
                       <div class="ptp-rs-item">
-                        <i class="fas fa-times"></i>
-                        Analyse de la campagne : <b>Comme un parfum de naturel</b>
+                        <i class="fas fa-times"></i> Analyse de la campagne : <b>Comme un parfum de naturel</b>
                         <span>70€</span>
                       </div>
                     </div>
@@ -204,43 +202,47 @@
             </div>
             <div class="row">
               <div class="col-md-7">
-                <div class="pay-left-part">
+                <div class="pay-left-part plp-center">
                   <div class="plp-container">
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="form-group form-group-default required">
+                        <div class="form-group form-group-default required pay-form-border">
                           <label>Nom ou société</label>
                           <input type="text" class="form-control" />
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="form-group form-group-default">
+                        <div class="form-group form-group-default pay-form-border">
                           <label>Prénom</label>
                           <input type="text" class="form-control" />
                         </div>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="form-group form-group-default required">
-                        <label>Email</label>
-                        <input type="email" class="form-control" />
+                      <div class="col-md-12">
+                        <div class="form-group form-group-default required pay-form-border">
+                          <label>Email</label>
+                          <input type="email" class="form-control" />
+                        </div>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="form-group form-group-default required">
-                        <label>Adresse</label>
-                        <input type="text" class="form-control" />
+                      <div class="col-md-12">
+                        <div class="form-group form-group-default pay-form-border required">
+                          <label>Adresse</label>
+                          <input type="text" class="form-control" />
+                        </div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="form-group form-group-default required">
+                        <div class="form-group form-group-default pay-form-border required">
                           <label>Pays</label>
                           <input type="text" class="form-control" />
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="form-group form-group-default required">
+                        <div class="form-group form-group-default pay-form-border required">
                           <label>Ville</label>
                           <input type="text" class="form-control" />
                         </div>
@@ -248,13 +250,13 @@
                     </div>
                     <div class="row">
                       <div class="col-md-8">
-                        <div class="form-group form-group-default required">
+                        <div class="form-group form-group-default pay-form-border required">
                           <label>Département</label>
                           <input type="text" class="form-control" />
                         </div>
                       </div>
                       <div class="col-md-4">
-                        <div class="form-group form-group-default required">
+                        <div class="form-group form-group-default pay-form-border required">
                           <label>Code postal</label>
                           <input type="text" class="form-control" />
                         </div>
@@ -266,7 +268,91 @@
               </div>
               <div class="col-md-5">
                 <div class="pay-right-part">
-
+                  <div class="bg-master-light padding-30 b-rad-lg" id="payment">
+                    <h2 class="pull-left no-margin">Credit Card</h2>
+                    <ul class="list-unstyled pull-right list-inline no-margin">
+                      <li>
+                        <a href="#">
+                          <img width="51" height="32" data-src-retina="assets/img/form-wizard/visa2x.png"
+                            data-src="assets/img/form-wizard/visa.png" class="brand" alt="logo"
+                            src="assets/img/form-wizard/visa.png">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="hint-text">
+                          <img width="51" height="32" data-src-retina="assets/img/form-wizard/amex2x.png"
+                            data-src="assets/img/form-wizard/amex.png" class="brand" alt="logo"
+                            src="assets/img/form-wizard/amex.png">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="hint-text">
+                          <img width="51" height="32" data-src-retina="assets/img/form-wizard/mastercard2x.png"
+                            data-src="assets/img/form-wizard/mastercard.png" class="brand" alt="logo"
+                            src="assets/img/form-wizard/mastercard.png">
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <div class="form-group form-group-default m-t-25">
+                      <label>Titulaire de la carte</label>
+                      <input type="text" class="form-control" placeholder="Nom sur la carte" required="">
+                    </div>
+                    <div class="form-group form-group-default">
+                      <label>N° de carte</label>
+                      <input type="text" class="form-control" placeholder="1234-5678-9012-3456" required="">
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Expiration</label>
+                        <br>
+                        <div class="cs-wrapper">
+                          <div class="cs-select cs-skin-slide" tabindex="0">
+                            <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
+                              <option>01</option>
+                              <option>02</option>
+                              <option>03</option>
+                              <option>04</option>
+                              <option>05</option>
+                              <option>06</option>
+                              <option>07</option>
+                              <option>08</option>
+                              <option>09</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                            </select>
+                            <div class="cs-backdrop"></div>
+                          </div>
+                        </div>
+                        <div class="cs-wrapper">
+                          <div class="cs-select cs-skin-slide" tabindex="0">
+                            <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
+                              <option value="2014">2019</option>
+                              <option value="2020">2020</option>
+                              <option value="2021">2021</option>
+                              <option value="2022">2022</option>
+                              <option value="2023">2023</option>
+                              <option value="2024">2024</option>
+                              <option value="2025">2025</option>
+                              <option value="2026">2026</option>
+                              <option value="2027">2027</option>
+                              <option value="2028">2028</option>
+                              <option value="2029">2029</option>
+                              <option value="2030">2030</option>
+                            </select>
+                            <div class="cs-backdrop"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2 offset-md-4">
+                        <div class="form-group required">
+                          <label>CVC</label>
+                          <input type="text" class="form-control" placeholder="XXX" required="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
