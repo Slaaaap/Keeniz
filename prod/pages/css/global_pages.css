@@ -17849,4 +17849,30 @@ Main components
   height: 340px;
   width: 100%;
   object-fit: cover;
+.ap-bg-container {
+  width: 100%;
+  height: 40%;
+}
+
+.ap-bg-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 275px;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.ap-bg-container img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.no-padding {
+  padding: unset;
+}
+
+.ap-double-stack-infos {
+  display: flex;
+  flex-direction: column;
 }
