@@ -17877,4 +17877,106 @@ Main components
 .ap-double-stack-infos {
   display: flex;
   flex-direction: column;
+  margin-top: -8rem;
 }
+
+.ap-double-stack-infos #agency-avatar {
+  width: 10%;
+  margin: 0 0 -4.4rem 4.5rem;
+  z-index: 2;
+  position: absolute;
+}
+
+.ap-top-stack {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+}
+
+.ap-bottom-stack {
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 6px 20px 7px rgba(138, 138, 138, 0.27);
+}
+
+.ap-bottom-stack .row {
+  width: 85%;
+  margin: auto;
+}
+
+.ap-bottom-stack h5 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.ap-bottom-stack #campaign {
+  width: 85%;
+  margin: 40px auto 30px auto;
+}
+
+.ap-bottom-stack #about-row {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.ap-agency-name span {
+  display: flex;
+  align-items: center;
+  color: white!important;
+}
+
+.ap-agency-name h3 {
+  color: white;
+  font-weight: 700;
+  margin: unset;
+  font-size: 30px;
+}
+
+.ap-agency-name i {
+  margin-left: 1rem;
+  font-size: 20px;
+}
+
+.ap-agency-name p {
+  color: white;
+  font-size: 18px;
+}
+
+.ap-agency-tags {
+  display: flex;
+  align-items: center;
+}
+
+.ap-tag {
+  background: #fafdff00;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.ap-tag:hover {
+  border: 2px solid #ffffff;
+}
+
+.ap-icons-container {
+  display: flex;
+  margin: 20px auto;
+  width: 76%;
+  font-size: 20px;
+}
+
+.ap-icons-container i {
+  margin: 0 5px;
+  transition: all ease 0.25s;
+}
+
+.ap-icons-container i:hover {
+  cursor: pointer;
+  color: #053CC8;
+}
+
+.ap-bottom-stack #space-card {
+  margin-bottom: 2rem;
+}
+
