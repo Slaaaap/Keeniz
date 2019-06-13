@@ -3196,7 +3196,7 @@ hr.dotted {
 }
 
 .bg-warning-light {
-  background-color: #f9d975;
+  background-color: #f9d975!important;
 }
 
 .bg-warning-lighter {
@@ -18163,6 +18163,44 @@ Main components
 .settings-warning {
   width: 100%;
   height: 90px;
+}
+
+.campagne-header-img img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.campagne-info-container {
+  position: absolute;
+  width: 400px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 25px;
+  margin-top: -250px;
+  margin-left: 70%;
+  box-shadow: 0 6px 20px 7px rgba(138, 138, 138, 0.27);
+  padding: 20px;
+}
+
+.campagne-info-container img {
+  max-width: 40%;
+  height: 140px;
+}
+
+.campagne-first-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.campagne-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-warning {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18269,6 +18307,87 @@ Main components
   cursor: unset!important;
 }
 
+.campagne-profile button {
+  padding: 10px 19px;
+}
+
+.campagne-profile button:hover {
+  background-color: #ddb83f!important;
+  border-color: #fff;
+}
+
+.campagne-second-row p {
+  font-size: 16px;
+  padding: 25px 15px;
+  text-align: justify;
+}
+
+.campagne-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+
+.campagne-title button {
+  max-height: 50px;
+  padding: 15px 19px;
+}
+
+.campagne-title button:hover {
+  background-color: #ddb83f!important;
+  border-color: #fff;
+}
+
+.campagne-tags button {
+  margin-right: 1rem;
+  border-radius: 25px;
+  color: #053CC8;
+  background-color: #053cc85c;
+  border-color: #fff;
+}
+
+.campagne-tags button:hover {
+  color: #fff;
+  background-color: #053cc8;
+  border-color: #fff;
+}
+
+.campagne-social-network span {
+  font-size: 24px;
+}
+
+.campagne-social-network i {
+  font-size: 24px;
+  padding-right: 0.5rem;
+}
+
+.campagne-social-network a {
+  font-size: 16px;
+  padding-left:30px;
+  font-weight: bold;
+  color: #053CC8;
+}
+
+.moodboard-container img {
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin: auto;
+}
+
 #no-margin {
   margin: unset!important;
+}
+
+#hidden-participation {
+  display: none;
+}
+
+#active-participation:hover {
+  background-color: #052f99!important;
+}
+
+#active-participation {
+  padding: 15px 70px;
 }
