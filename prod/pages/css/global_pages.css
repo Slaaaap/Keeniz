@@ -18732,3 +18732,91 @@ Main components
   background-color: #0733a1!important;
   border-color: #fff;
 }
+
+.form-ls {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollspy-container {
+  width: 20%;
+  height: 453px;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 1px 9px 0px rgba(138, 138, 138, 0.27);
+  position: fixed;
+  margin: 5rem auto;
+  display: flex;
+}
+
+.scrollspy-center {
+  display: flex;
+  width: 100%;
+}
+
+.scrollspy-list-container {
+  width: 50%;
+}
+
+.scrollspy-list {
+  list-style-type: none;
+}
+
+.scrollspy-dots-list {
+  list-style-type: none;
+}
+
+.scrollspy-list li {
+  margin: 6rem auto;
+  text-align: center;
+}
+
+.scrollspy-progress-bar {
+  width: 50%;
+}
+
+.scrollspy-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #80808059;
+  margin: 5.7rem 0;
+}
+
+#section1 {
+  color: #fff;
+  background-color: #1E88E5;
+}
+
+#section2 {
+  color: #fff;
+  background-color: #673ab7;
+}
+
+.nc-form{
+  height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+}
+
+#section3 {
+  color: #fff;
+  background-color: #ff9800;
+}
+
+body {
+  position: relative !important;
+}
+
+ul.nav-pills {
+  top: 100px;
+  position: fixed;
+}
+
+div.col-md-8 div {
+  height: 500px;
+  font-size: 28px;
+}
