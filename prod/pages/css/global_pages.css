@@ -18174,7 +18174,7 @@ Main components
 .campagne-info-container {
   position: absolute;
   width: 400px;
-  height: 450px;
+  height: auto;
   background-color: #fff;
   border-radius: 25px;
   margin-top: -250px;
@@ -18316,7 +18316,7 @@ Main components
 
 .campagne-second-row p {
   font-size: 16px;
-  padding: 25px 15px;
+  padding: 0px 15px;
   text-align: justify;
 }
 
@@ -18333,7 +18333,7 @@ Main components
 }
 
 .campagne-title button:hover {
-  background-color: #ddb83f!important;
+  /*background-color: #ddb83f!important;*/
   border-color: #fff;
 }
 
@@ -18825,6 +18825,11 @@ Main components
   justify-content: flex-end;
 }
 
+.modal-message-btn-agency {
+  display: flex;
+  justify-content: center;
+}
+
 .modal-message-content textarea {
   width: 100%;
 }
@@ -18899,4 +18904,74 @@ Main components
 
 .gallery-thumbnail .row {
   justify-content: center;
+}
+
+.campagne-first-row #avatar-campagne {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.social-networks-row {
+  display: flex;
+  padding: 10px 0;
+}
+
+.social-networks-row div {
+  margin-left: 1rem;
+  font-size: 20px;
+}
+
+.campagne-second-row #fix-padding {
+  padding-top: 0px!important;
+}
+
+.inf-actions-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.inf-action {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  box-shadow: 0 1px 9px 0px rgba(138, 138, 138, 0.27);
+  padding: 0.7rem 2rem 0.7rem 4rem;
+  margin: 0.5rem auto;
+}
+
+#half-width-modal {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.inf-action-rs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 10%;
+}
+
+.inf-action-ls {
+  width: 100%;
+}
+
+.inf-action-rs.checkbox.check-primary input[type="checkbox"]:checked+label:before {
+  border-color: #053CC8!important;
+}
+
+.modal-message-content textarea {
+  display: none!important;
+}
+
+.note-editor p {
+  border: 1px solid lightgrey;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+#flexcol {
+  flex-direction: column;
 }
