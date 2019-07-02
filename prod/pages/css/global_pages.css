@@ -18191,6 +18191,7 @@ Main components
 .campagne-first-row {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 2rem;
 }
 
 .campagne-profile {
@@ -18391,11 +18392,12 @@ Main components
 }
 
 #classic-hover:hover {
-  background-color: #0000001f!important;
+  background-color: #052f99!important;
 }
 
 #classic-hover {
-  border-color: #0000001f;
+  border-color: #052f99;
+  color: #fff!important;
 }
 
 .campagne-liste-container {
@@ -19017,7 +19019,7 @@ Main components
   justify-content: space-evenly;
 }
 
-.analyse-ls p, span {
+.analyse-ls p, .analyse-ls span {
   font-size: 16px;
 }
 
@@ -19176,4 +19178,16 @@ Main components
 .stats-likes-comments .fa-bookmark:hover {
   color: #626262;
   cursor: default;
+}
+
+.select2-container .select2-selection .select2-selection__arrow {
+  bottom: 19px;
+  right: 22px !important;
+}
+
+#analyse-mission p {
+  font-size: 15px;
+  letter-spacing: normal;
+  padding: 0.5rem 0 0 2rem;
+  text-align: justify;
 }
