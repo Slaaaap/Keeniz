@@ -28,7 +28,7 @@
   <link href="pages/css/pages-icon.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link media="screen" type="text/css" rel="stylesheet" href="assets/plugins/jquery-nouislider/jquery.nouislider.css">
+
 
 </head>
 
@@ -169,113 +169,320 @@
         <!-- START CONTAINER FLUID -->
         <div class=" container-fluid   container-fixed-lg">
           <!-- BEGIN PlACE PAGE CONTENT HERE -->
-          <div class="search-inf-filters">
+          <div class="analyse-overall-container">
             <div class="row">
-              <div class="col-md-2">
-                <div class="form-group form-group-default">
-                  <label>Nom</label>
-                  <input type="text" class="form-control" />
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="cs-select cs-skin-slide" tabindex="0">
-                  <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                    <option disabled>Plateforme</option>
-                    <option>Toutes</option>
-                    <option>YouTube</option>
-                    <option>Instagram</option>
-                    <option>Snapchat</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-3">
-                  <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                      <option disabled>Rémunération</option>
-                      <option>Toutes</option>
-                      <option>>100€</option>
-                      <option>>500€</option>
-                      <option>>1 000€</option>
-                    </select>
-              </div>
-              <div class="col-md-3">
-                <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                  <option disabled>Domaine</option>
-                  <option>Tous</option>
-                  <option>Lifestyle</option>
-                  <option>Mode</option>
-                  <option>Sport</option>
-                </select>
-              </div>
+              <h2 class="bold">Rêver au bout du monde</h2>
             </div>
             <div class="row">
-              <button class="btn btn-tag btn-tag-rounded bg-keeniz white">Appliquer les filtres</button>
+              <div class="col-md-6">
+                <div class="analyse-ls">
+                  <h4 class="semi-bold">Informations générales</h4>
+                  <div class="analyse-ls-header">
+                    <span>Pays : <span class="bold">France</span></span>
+                    <span>Nombre d'influenceurs sélectionnés : <span class="bold">20</span></span>
+                  </div>
+                  <br />
+                  <p>Liste des missions que vous avez proposées :</p>
+                  <p class="semi-bold">1- Présenter le concept et les produits en publiant au moins 2 photos sur un
+                    réseau social.</p>
+                  <p class="semi-bold">2- L'influenceur doit apparaître sur la photo aux côtés du produit. </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="analyse-rs">
+                  <h4 class="semi-bold">Liste des influenceurs sélectionnés</h4>
+                  <div class="analyse-sn-container">
+                    <div class="analyse-sn-ls">
+                      <div class="analyse-sn-icon-container">
+                        <img src="./assets/img/profiles/6x.jpg" alt="avatar" />
+                      </div>
+                      <span>@EricTravel</span>
+                    </div>
+                    <div class="analyse-sn-rs">
+                      <i class="fas fa-user"></i>
+                      <i class="far fa-comment"></i>
+                      <button class="btn btn-tag btn-tag-rounded bg-warning" id="analyse-missions">
+                        Mes missions
+                      </button>
+                    </div>
+                  </div>
+                  <div class="analyse-sn-container">
+                    <div class="analyse-sn-ls">
+                      <div class="analyse-sn-icon-container">
+                        <img src="./assets/img/profiles/7x.jpg" alt="avatar" />
+                      </div>
+                      <span>@Jona_Doe</span>
+                    </div>
+                    <div class="analyse-sn-rs">
+                      <i class="fas fa-user"></i>
+                      <i class="far fa-comment"></i>
+                      <button class="btn btn-tag btn-tag-rounded bg-warning" id="analyse-missions">
+                        Mes missions
+                      </button>
+                    </div>
+                  </div>
+                  <div class="analyse-sn-container">
+                    <div class="analyse-sn-ls">
+                      <div class="analyse-sn-icon-container">
+                        <img src="./assets/img/profiles/8x.jpg" alt="avatar" />
+                      </div>
+                      <span>@Markus_P</span>
+                    </div>
+                    <div class="analyse-sn-rs">
+                      <i class="fas fa-user"></i>
+                      <i class="far fa-comment"></i>
+                      <button class="btn btn-tag btn-tag-rounded bg-warning" id="analyse-missions">
+                        Mes missions
+                      </button>
+                    </div>
+                  </div>
+                  <div class="analyse-rs-pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a href="#" class="active">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="search-results-container">
+            <h4 class="semi-bold">Publications réalisées par les influenceurs</h4>
             <div class="row">
-              <div class="col-md-6">
-                <div class="project-card">
-                  <div class="project-card-ls">
-                    <h4>Run in the city</h4>
-                    <p>Par <a href="#">Adidas</a>, France</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad mini...</p>
-                    <button class="btn btn-tag btn-tag-rounded bg-keeniz white" id="discover-p">Découvrir</button>
-                    <button class="btn btn-tag btn-tag-rounded" id="project-in-progress">En cours</button>
+
+              <div class="panel full-width">
+                <ul class="nav nav-tabs nav-tabs-simple">
+                  <li class="active">
+                    <a data-toggle="tab" href="#tab2Fb">Facebook</a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" href="#tab2Insta">Instagram</a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" href="#tab2Yt">Youtube</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab2Fb">
+                    <div class="row column-seperation">
+                      <div class="col-md-12">
+                        <div class="inf-action" id="flexcol">
+                          <div class="panel panel-group panel-transparent" data-toggle="collapse" id="accordion">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a class="collapsed analyse-collapsible-header" data-parent="#accordion"
+                                    data-toggle="collapse" href="#collapseOne">
+                                    <div class="avatar-plus-name">
+                                      <img src="./assets/img/profiles/4x.jpg" alt="avatar" />
+                                      <span>@Jona_Doe</span>
+                                    </div>
+                                    <i class="fas fa-caret-down centered"></i>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div class="panel-collapse collapse" id="collapseOne">
+                                <div class="panel-body collapsible-row">
+                                  <div class="stats-likes-comments">
+                                    <div>
+                                      <i class="fas fa-heart"></i>
+                                      3 500
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-comment"></i>
+                                      248
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-bookmark"></i>
+                                      3
+                                    </div>
+                                  </div>
+                                  <div class="stats-nb">
+                                    <div class="stats-engage">
+                                      <div id="top-side">8%</div>
+                                      <div id="bottom-side">Engagement</div>
+                                    </div>
+                                    <div class="stats-impress">
+                                      <div id="top-side">25 000</div>
+                                      <div id="bottom-side">Impressions</div>
+                                    </div>
+                                    <div class="stats-po">
+                                      <div id="top-side">41 000</div>
+                                      <div id="bottom-side">Portées</div>
+                                    </div>
+                                  </div>
+                                  <div class="analyse-link">
+                                    <a href="#">
+                                      <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="inf-action" id="flexcol">
+                          <div class="panel panel-group panel-transparent" data-toggle="collapse" id="accordion">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a class="collapsed analyse-collapsible-header" data-parent="#accordion"
+                                    data-toggle="collapse" href="#collapseTwo">
+                                    <div class="avatar-plus-name">
+                                      <img src="./assets/img/profiles/6x.jpg" alt="avatar" />
+                                      <span>@EricTravel</span>
+                                    </div>
+                                    <i class="fas fa-caret-down centered"></i>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div class="panel-collapse collapse" id="collapseTwo">
+                                <div class="panel-body collapsible-row">
+                                  <div class="stats-likes-comments">
+                                    <div>
+                                      <i class="fas fa-heart"></i>
+                                      3 500
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-comment"></i>
+                                      248
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-bookmark"></i>
+                                      3
+                                    </div>
+                                  </div>
+                                  <div class="stats-nb">
+                                    <div class="stats-engage">
+                                      <div id="top-side">8%</div>
+                                      <div id="bottom-side">Engagement</div>
+                                    </div>
+                                    <div class="stats-impress">
+                                      <div id="top-side">25 000</div>
+                                      <div id="bottom-side">Impressions</div>
+                                    </div>
+                                    <div class="stats-po">
+                                      <div id="top-side">41 000</div>
+                                      <div id="bottom-side">Portées</div>
+                                    </div>
+                                  </div>
+                                  <div class="analyse-link">
+                                    <a href="#">
+                                      <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="inf-action" id="flexcol">
+                          <div class="panel panel-group panel-transparent" data-toggle="collapse" id="accordion">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a class="collapsed analyse-collapsible-header" data-parent="#accordion"
+                                    data-toggle="collapse" href="#collapseThree">
+                                    <div class="avatar-plus-name">
+                                      <img src="./assets/img/profiles/8x.jpg" alt="avatar" />
+                                      <span>Markus_P</span>
+                                    </div>
+                                    <i class="fas fa-caret-down centered"></i>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div class="panel-collapse collapse" id="collapseThree">
+                                <div class="panel-body collapsible-row">
+                                  <div class="stats-likes-comments">
+                                    <div>
+                                      <i class="fas fa-heart"></i>
+                                      3 500
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-comment"></i>
+                                      248
+                                    </div>
+                                    <div>
+                                      <i class="fas fa-bookmark"></i>
+                                      3
+                                    </div>
+                                  </div>
+                                  <div class="stats-nb">
+                                    <div class="stats-engage">
+                                      <div id="top-side">8%</div>
+                                      <div id="bottom-side">Engagement</div>
+                                    </div>
+                                    <div class="stats-impress">
+                                      <div id="top-side">25 000</div>
+                                      <div id="bottom-side">Impressions</div>
+                                    </div>
+                                    <div class="stats-po">
+                                      <div id="top-side">41 000</div>
+                                      <div id="bottom-side">Portées</div>
+                                    </div>
+                                  </div>
+                                  <div class="analyse-link">
+                                    <a href="#">
+                                      <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
-                  <div class="project-card-rs">
-                    <img src="./assets/img/gallery/runinthecity.jpg" alt="project-picture" />
+                  <div class="tab-pane" id="tab2Insta">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="fs-16 m-b-20">Le Moodboard vous aide à découvrir le style de l'influenceur.
+                        </p>
+                        <div class="moodboard-container">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <img src="./assets/img/gallery/12.jpg" alt="moodboard pic" />
+                            </div>
+                            <div class="col-md-4">
+                              <img src="./assets/img/gallery/runinthecity.jpg" alt="moodboard pic" />
+                            </div>
+                            <div class="col-md-4">
+                              <img src="./assets/img/gallery/runinthecity.jpg" alt="moodboard pic" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="project-card">
-                  <div class="project-card-ls">
-                    <h4>Travel the world</h4>
-                    <p>Par <a href="#">Booking.com</a>, France</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad mini...</p>
-                    <button class="btn btn-tag btn-tag-rounded bg-keeniz white" id="discover-p">Découvrir</button>
-                    <button class="btn btn-tag btn-tag-rounded" id="project-over">Terminé</button>
-                  </div>
-                  <div class="project-card-rs">
-                    <img src="./assets/img/gallery/traveltheworld.jpg" alt="project-picture" />
+                  <div class="tab-pane" id="tab2Yt">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="fs-16 m-b-20">Le yttt vous aide à découvrir le style de l'influenceur.
+                        </p>
+                        <div class="moodboard-container">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <img src="./assets/img/gallery/12.jpg" alt="moodboard pic" />
+                            </div>
+                            <div class="col-md-4">
+                              <img src="./assets/img/gallery/runinthecity.jpg" alt="moodboard pic" />
+                            </div>
+                            <div class="col-md-4">
+                              <img src="./assets/img/gallery/runinthecity.jpg" alt="moodboard pic" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row m-t-30">
-              <div class="col-md-6">
-                <div class="project-card">
-                  <div class="project-card-ls">
-                    <h4>Dream</h4>
-                    <p>Par <a href="#">Booking.com</a>, France</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad mini...</p>
-                    <button class="btn btn-tag btn-tag-rounded bg-keeniz white" id="discover-p">Découvrir</button>
-                    <button class="btn btn-tag btn-tag-rounded" id="project-over">Terminé</button>
-                  </div>
-                  <div class="project-card-rs">
-                    <img src="./assets/img/gallery/dream1.jpg" alt="project-picture" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="project-card">
-                  <div class="project-card-ls">
-                    <h4>Dream</h4>
-                    <p>Par <a href="#">Booking.com</a>, France</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad mini...</p>
-                    <button class="btn btn-tag btn-tag-rounded bg-keeniz white" id="discover-p">Découvrir</button>
-                    <button class="btn btn-tag btn-tag-rounded" id="project-in-progress">En cours</button>
-                  </div>
-                  <div class="project-card-rs">
-                    <img src="./assets/img/gallery/dream2.jpg" alt="project-picture" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="row"></div>
           </div>
           <!-- END PLACE PAGE CONTENT HERE -->
         </div>
