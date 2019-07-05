@@ -181,17 +181,14 @@
                     </ul>
                   </div>
                   <div class="scrollspy-progress-bar">
-                    <ul class="scrollspy-dots-list">
-                      <li>
-                        <div class="scrollspy-dot"></div>
-                      </li>
-                      <li>
-                        <div class="scrollspy-dot"></div>
-                      </li>
-                      <li>
-                        <div class="scrollspy-dot"></div>
-                      </li>
-                    </ul>
+                    <div class="scrollspy-dots-list">
+                      <div class="progress-container">
+                        <div class="progress-bar" id="myBar"></div>
+                      </div>
+                      <div class="scrollspy-dot" id="dot1"></div>
+                      <div class="scrollspy-dot" id="dot2"></div>
+                      <div class="scrollspy-dot" id="dot3"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -243,38 +240,216 @@
                   </select>
                 </div>
                 <p class="col-two-ps">Décrivez votre société en quelques mots :</p>
-                <div id="summernote" style="display: none;">Hello</div>
+                <div id="summernote2" style="display: none;"><br /><br /><br /><br /></div>
+                <p class="m-t-15 m-b-15">Indiquez les missions que les influenceurs doivent réaliser. -Ex: publier 2
+                  photos
+                </p>
+                <div class="form-group form-group-default">
+                  <label></label>
+                  <input type="text" name="uname" class="form-control" required>
+                </div>
+                <div class="settings-add-label">
+                  <div class="sal-ls">
+                    <span>+</span>
+                  </div>
+                  <div class="sal-rs">
+                    <span>Ajouter une mission</span>
+                  </div>
+                </div>
+                <p class="m-t-30">Sélectionnez les réseaux sociaux :</p>
+                <div class="nc-sn-container">
+                  <div class="checkbox check-keeniz checkbox-circle custom-radio">
+                    <input type="checkbox" id="checkbox7">
+                    <label for="checkbox7">Instagram</label>
+                  </div>
+                  <div class="checkbox check-keeniz checkbox-circle custom-radio">
+                    <input type="checkbox" id="checkbox8">
+                    <label for="checkbox8">Facebook</label>
+                  </div>
+
+                  <div class="checkbox check-keeniz checkbox-circle custom-radio">
+                    <input type="checkbox" id="checkbox9">
+                    <label for="checkbox9">Youtube</label>
+                  </div>
+                  <div class="checkbox check-keeniz checkbox-circle custom-radio">
+                    <input type="checkbox" id="checkbox10">
+                    <label for="checkbox10">Blog</label>
+                  </div>
+                </div>
+                <p class="m-t-15 m-b-15">Indiquez le(s) compte(s) à identifier ou le(s) lien(s) à partager :</p>
+                <div class="panel">
+                  <ul class="nav nav-tabs nav-tabs-simple">
+                    <li class="active">
+                      <a data-toggle="tab" class="text-center fs-20 active show" href="#tab2Fb"><i
+                          class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" class="text-center fs-20" href="#tab2Insta"><i
+                          class="fab fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="tab2Fb">
+                      <div class="row column-seperation">
+                        <div class="col-md-6">
+                          <div class="form-group form-group-default">
+                            <label>Compte</label>
+                            <input type="text" name="uname" class="form-control" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group form-group-default">
+                            <label>Lien</label>
+                            <input type="text" name="uname" class="form-control" required>
+                          </div>
+                        </div>
+                        <div class="settings-add-label m-l-15 m-r-15">
+                          <div class="sal-ls">
+                            <span>+</span>
+                          </div>
+                          <div class="sal-rs">
+                            <span>Ajouter un compte ou un lien</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="tab2Insta">
+                      <div class="row column-seperation">
+                        <div class="col-md-6">
+                          <div class="form-group form-group-default">
+                            <label>Compte</label>
+                            <input type="text" name="uname" class="form-control" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group form-group-default">
+                            <label>Lien</label>
+                            <input type="text" name="uname" class="form-control" required>
+                          </div>
+                        </div>
+                        <div class="settings-add-label m-l-15 m-r-15">
+                          <div class="sal-ls">
+                            <span>+</span>
+                          </div>
+                          <div class="sal-rs">
+                            <span>Ajouter un compte ou un lien</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nc-form-container">
+                <p class="bold m-t-15 m-b-15">2- RÉCOMPENSES</p>
+                <div class="form-group form-group-default">
+                  <label>Nom du produit ou service</label>
+                  <input type="text" name="uname" class="form-control" required>
+                </div>
+                <p class="col-two-ps">Décrivez en détail votre/vos produit(s) ou service(s) :</p>
+                <div id="summernote" style="display: none;"><br /><br /><br /><br /></div>
+                <div class="settings-add-label">
+                  <div class="sal-ls">
+                    <span>+</span>
+                  </div>
+                  <div class="sal-rs">
+                    <span>Ajouter un produit ou service</span>
+                  </div>
+                </div>
+                <p class="m-t-15 m-b-15">Indiquez la rémunération que vous souhaitez proposer aux influenceurs - Le
+                  montant représente la rémunération par influenceur</p>
+                <div class="form-group form-group-default">
+                  <label></label>
+                  <input type="text" placeholder="ex 100€" name="uname" class="form-control" required>
+                </div>
+                <p class="m-t-15 m-b-15">Ajoutez des photos pour définir votre projet. Votre moodboard aide les
+                  créateurs à comprendre le style visuel que vous recherchez.</p>
+                <div class="nc-photo-container">
+                  <div class="upload-photos">
+                    <a href="#">
+                      <span><i class="fas fa-cloud-upload-alt"></i></span>
+                      <span>Upload</span>
+                    </a>
+                  </div>
+                  <div class="banner-photo">
+                    <img src="./assets/img/profiles/tomdidy.jpg" alt="avatar" />
+                  </div>
+                  <div class="photo-separator">
+                    <div class="separator-line"></div>
+                  </div>
+                  <div class="more-photos">
+                    <img src="./assets/img/gallery/13.jpg" alt="avatar" />
+                    <img src="./assets/img/gallery/11.jpg" alt="avatar" />
+                    <img src="./assets/img/gallery/5.jpg" alt="avatar" />
+                  </div>
+                </div>
+              </div>
+              <div class="nc-form-container">
+                <p class="bold m-t-15 m-b-15">3- VALIDATION</p>
+                <p class="semi-bold">Besoin d'aller plus loin ? Sélectionnez une des options ci-dessous <i>- Les options
+                    ne sont pas obligatoires</i></p>
+                <div class="option-container">
+                  <div class="checkbox check-keeniz checkbox-circle option-ls custom-radio">
+                    <input type="checkbox" value="1" id="checkbox421">
+                    <label for="checkbox421"> </label>
+                  </div>
+                  <p class="option-desc">Découvrez et suivez les résultats de votre campagne ainsi que les résultats par
+                    influenceur (engagement total, engagement par influenceur, provenance et âge des followers...).</p>
+                  <div class="option-price">
+                    <p>Total</p>
+                    <span>50€</span>
+                  </div>
+                </div>
+                <div class="option-container">
+                  <div class="checkbox check-keeniz checkbox-circle option-ls custom-radio">
+                    <input type="checkbox" value="1" id="checkbox420">
+                    <label for="checkbox420"> </label>
+                  </div>
+                  <p class="option-desc">- Le tarif : 25€ / influenceur -<br />Laissez notre équipe vous accompagner
+                    dans votre campagne. Nous gérons la relation avec les influenceurs en suivant les actions des
+                    influenceurs et en les relançant s'ils ne publient pas.</p>
+                  <div class="option-price">
+                    <p>Total</p>
+                    <span>250€</span>
+                  </div>
+                </div>
+                <div class="checkbox check-keeniz">
+                  <input type="checkbox" value="1" id="checkbox666">
+                  <label for="checkbox666">Je confirme la publication de ce projet</label>
+                </div>
+                <div id="validate-container" class="m-t-50">
+                  <button id="validate" class="btn btn-tag btn-tag-rounded bg-keeniz white">Valider</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- END PLACE PAGE CONTENT HERE -->
+      <!-- END CONTAINER FLUID -->
+
+      <!-- END PAGE CONTENT -->
+      <!-- START COPYRIGHT -->
+      <!-- START CONTAINER FLUID -->
+      <!-- START CONTAINER FLUID -->
+      <div class=" container-fluid  container-fixed-lg footer">
+        <div class="copyright sm-text-center">
+          <p class="small no-margin pull-left sm-pull-reset">
+            <span class="hint-text">Copyright &copy; 2019 </span>
+            <span class="font-montserrat">KEENIZ</span>.
+            <span class="hint-text">Tous droits réservés. </span>
+            <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Conditions d'utilisation</a> <span
+                class="muted">|</span> <a href="#" class="m-l-10">Politique de confidentialité</a></span>
+          </p>
+          <p class="small no-margin pull-right sm-pull-reset">
+            <span class="hint-text">made with ♥</span>
+          </p>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <!-- END COPYRIGHT -->
     </div>
-    <!-- END CONTAINER FLUID -->
-  </div>
-  <!-- END PAGE CONTENT -->
-  <!-- START COPYRIGHT -->
-  <!-- START CONTAINER FLUID -->
-  <!-- START CONTAINER FLUID -->
-  <div class=" container-fluid  container-fixed-lg footer">
-    <div class="copyright sm-text-center">
-      <p class="small no-margin pull-left sm-pull-reset">
-        <span class="hint-text">Copyright &copy; 2019 </span>
-        <span class="font-montserrat">KEENIZ</span>.
-        <span class="hint-text">Tous droits réservés. </span>
-        <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Conditions d'utilisation</a> <span
-            class="muted">|</span> <a href="#" class="m-l-10">Politique de confidentialité</a></span>
-      </p>
-      <p class="small no-margin pull-right sm-pull-reset">
-        <span class="hint-text">made with ♥</span>
-      </p>
-      <div class="clearfix"></div>
-    </div>
-  </div>
-  <!-- END COPYRIGHT -->
-  </div>
-  <!-- END PAGE CONTENT WRAPPER -->
+    <!-- END PAGE CONTENT WRAPPER -->
   </div>
   <!-- END PAGE CONTAINER -->
   <!--START QUICKVIEW -->
@@ -542,7 +717,29 @@
       $('#datepicker').datepicker();
       $('#datepicker2').datepicker();
       $('#summernote').summernote();
+      $('#summernote2').summernote();
     });
+  </script>
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.height = scrolled + "%";
+      //var scrollValue = document.getElementById("myBar").style.height
+      if (scrolled >= 45) {
+        document.getElementById("dot2").style.backgroundColor = "#053cc8";
+      } else if (scrolled < 45) {
+        document.getElementById("dot2").style.backgroundColor = "#ccc";
+      }
+      if (scrolled >= 95) {
+        document.getElementById("dot3").style.backgroundColor = "#053cc8";
+      } else if (scrolled < 95) {
+        document.getElementById("dot3").style.backgroundColor = "#ccc";
+      }
+    }
   </script>
 </body>
 
