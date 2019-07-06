@@ -19348,3 +19348,49 @@ Main components
   padding: 10px 45px;
 }
 
+.bg-grey {
+  background-color: #f7f7f7;
+}
+
+.center-flex-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.synchro-overall-container .center-flex-items button {
+  padding: 10px 31px;
+}
+
+.synchro-overall-container .center-flex-items button .fa-signal, .synchro-overall-container .center-flex-items button .fa-youtube,.synchro-overall-container .center-flex-items button .fa-instagram {
+  padding-right: 10px;
+}
+
+.synchro-overall-container .import-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #053CC8;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.synchro-overall-container .center-flex-items .fa-sync-alt {
+  font-size: 16px;
+  color: #053CC8;
+  padding-right: 0.5rem;
+}
+
+.synchro-overall-container .center-flex-items p {
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+.synchro-overall-container .panel li {
+  width: 33%;
+}
+
