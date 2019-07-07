@@ -17685,7 +17685,7 @@ Main components
 .result-card {
   border-radius: 5px;
   background-color: #fff;
-  box-shadow: 0 6px 20px 7px rgba(138, 138, 138, 0.27);
+  box-shadow: 0 6px 20px -3px rgba(138, 138, 138, 0.27);
   margin: 0 0 50px 0;
 }
 
@@ -19302,7 +19302,7 @@ Main components
   width: 100%;
 }
 
-.nc-photo-container .more-photos img,.banner-photo img  {
+.nc-photo-container .more-photos img, .banner-photo img {
   width: 100px;
   height: 100%;
   object-fit: cover;
@@ -19363,7 +19363,7 @@ Main components
   padding: 10px 31px;
 }
 
-.synchro-overall-container .center-flex-items button .fa-signal, .synchro-overall-container .center-flex-items button .fa-youtube,.synchro-overall-container .center-flex-items button .fa-instagram {
+.synchro-overall-container .center-flex-items button .fa-signal, .synchro-overall-container .center-flex-items button .fa-youtube, .synchro-overall-container .center-flex-items button .fa-instagram {
   padding-right: 10px;
 }
 
@@ -19391,6 +19391,75 @@ Main components
 }
 
 .synchro-overall-container .panel li {
-  width: 33%;
+  width: 33.33%;
 }
 
+.stats-inf-container .panel li#header {
+  width: 33.33%;
+  text-align: center;
+}
+
+.stats-inf-container .panel li a#icon-a {
+  font-size: 26px;
+}
+
+.top3-card {
+  width: 66%;
+  margin: auto;
+  height: 420px;
+}
+
+.stats-top-post {
+  justify-content: space-around;
+  padding-top: 1.6rem;
+}
+
+.stats-top-post .result-social:hover {
+  cursor: default;
+}
+
+.stats-top-post .fa-heart, .stats-top-post .fa-heart:hover {
+  position: relative;
+  margin: unset;
+  font-size: inherit;
+  cursor: default;
+}
+
+.stats-compte {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 1px 9px 0px rgba(138, 138, 138, 0.27);
+  padding: 2rem;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+}
+
+.single-stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5rem;
+}
+
+.single-stat span {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #053CC8;
+}
+
+.single-stat p {
+  margin: unset;
+}
+
+.margin-auto {
+  margin: auto!important;
+}
+
+.row-graph .profile-stats-left-graph {
+  margin-top: 3rem!important;
+  width: 90%;
+}
