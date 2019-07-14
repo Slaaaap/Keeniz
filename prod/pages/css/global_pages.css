@@ -19469,11 +19469,11 @@ Main components
   width: 90%;
 }
 
-<<<<<<< HEAD
 #login-bg-img {
   object-fit: cover;
   width: 75%;
-=======
+}
+
 .pie-chart-container {
   display: flex;
   justify-content: center;
@@ -19483,5 +19483,4 @@ Main components
 
 .shadow-keeniz {
   box-shadow: 0 1px 9px 0px rgba(138, 138, 138, 0.27);
->>>>>>> ee43606486638c82f13f94fdb7ba2adb1085c892
 }
