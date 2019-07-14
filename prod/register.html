@@ -41,51 +41,65 @@
         <img class="registerLogo" src="assets/img/keeniz_logo.png" alt="logo" data-src="assets/img/keeniz_logo.png"
           data-src-retina="assets/img/keeniz_logo.png">
       </div>
-      <h3 class="black m-t-50">Laissez les influenceurs participer de manière ludique au développement de votre marque
-      </h3>
-      <p class="black">
-        Créez votre compte Keeniz. Vous pouvez aussi vous connecter avec <a href="#"><b>Facebook</b></a> ou <a
-          href="#"><b>Google</b></a>
-      </p>
+      <h4 class="black m-t-50">Créez votre compte Keeniz !<br/> Vous avez déjà un compte ? <a href="#"><b>C'est par ici
+            !</b></a>
+      </h4>
       <form id="form-register" class="p-t-15" role="form" action="index.html">
         <div class="row">
-          <div class="col-md-6">
-            <div class="form-group form-group-default">
-              <label>Prénom</label>
-              <input type="text" name="fname" class="form-control" required>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group form-group-default">
-              <label>Nom</label>
-              <input type="text" name="lname" class="form-control" required>
-            </div>
-          </div>
-        </div>
-        <div class="row">
           <div class="col-md-12">
-            <div class="form-group form-group-default">
-              <label>Email</label>
-              <input type="text" name="uname" class="form-control" required>
-            </div>
+            <select class="cs-select cs-skin-slide" onchange="alert('cc');" data-init-plugin="cs-select" id="account-type"
+              >
+              <option disabled>Type de compte</option>
+              <option value="marque">Marque</option>
+              <option value="agence">Agence</option>
+              <option value="influenceur">Influenceur</option>
+            </select>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group form-group-default">
-              <label>Mot de passe</label>
-              <input type="password" name="pass" placeholder="8 caractères minimum" class="form-control" required>
+
+
+        <div class="display-test">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group form-group-default">
+                <label>Prénom</label>
+                <input type="text" name="fname" class="form-control" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group form-group-default">
+                <label>Nom</label>
+                <input type="text" name="lname" class="form-control" required>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group form-group-default">
-              <label>Confirmation du mot de passe</label>
-              <input type="password" name="pass" class="form-control" required>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group form-group-default">
+                <label>Email</label>
+                <input type="text" name="uname" class="form-control" required>
+              </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group form-group-default">
+                <label>Mot de passe</label>
+                <input type="password" name="pass" placeholder="8 caractères minimum" class="form-control" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group form-group-default">
+                <label>Confirmation du mot de passe</label>
+                <input type="password" name="pass" class="form-control" required>
+              </div>
+            </div>
+          </div>
+
         </div>
+
         <div class="row m-t-10">
           <div class="col-lg-6 black">
             <p><small>En créant un compte, j'accepte les <a href="#">Conditions d'utilisation</a>.</small>
@@ -264,6 +278,11 @@
     $(function () {
       $('#form-register').validate()
     })
+  </script>
+  <script>
+    function displayDiv(sel) {
+      alert(sel.options[sel.selectedIndex].text);
+    }
   </script>
 </body>
 

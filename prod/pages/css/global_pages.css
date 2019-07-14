@@ -17495,7 +17495,7 @@ Main components
 }
 
 .registerLogo {
-  width: 85%;
+  width: 50%;
   height: 100%;
 }
 
@@ -17671,14 +17671,19 @@ Main components
   padding: 7px 42px;
 }
 
-.search-inf-filters div.cs-skin-slide {
+.search-inf-filters div.cs-skin-slide, #form-register div.cs-skin-slide {
   display: flex;
   align-items: center;
   width: 100%;
   height: 54px;
 }
 
-.search-inf-filters .cs-wrapper {
+#form-register div.cs-skin-slide {
+  max-width: unset;
+  margin-bottom: 10px;
+}
+
+.search-inf-filters .cs-wrapper, #form-register .cs-wrapper {
   width: 100%;
 }
 
@@ -19462,4 +19467,9 @@ Main components
 .row-graph .profile-stats-left-graph {
   margin-top: 3rem!important;
   width: 90%;
+}
+
+#login-bg-img {
+  object-fit: cover;
+  width: 75%;
 }
