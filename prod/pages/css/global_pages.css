@@ -16947,8 +16947,8 @@ Main components
 }
 
 .dashboard-avatar img {
-  max-width: 100%;
-  margin: 0 20px;
+  max-width: 78%;
+  margin: 0 34px;
   border-radius: 50%;
 }
 
@@ -17284,6 +17284,7 @@ Main components
   max-width: 90%;
   font-size: 20px;
   font-weight: bold !important;
+  padding-top: 15px;
 }
 
 .profile-about p {
@@ -17316,7 +17317,6 @@ Main components
 
 .profile-stats-row {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 2em;
   justify-content: center;
 }
@@ -17406,10 +17406,10 @@ Main components
 }
 
 .profile-projects-container {
-  border: 1px solid #0000002b;
-  width: 89%;
+  width: 100%;
   display: flex;
   margin: auto;
+  margin-bottom: 2rem;
 }
 
 .profile-projects-ls img {
@@ -17420,12 +17420,18 @@ Main components
   max-width: 35%;
 }
 
+.profile-gallery {
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
 .profile-projects-rs {
   width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 
 .profile-projects-rs p {
@@ -18167,7 +18173,7 @@ Main components
 
 .settings-warning {
   width: 100%;
-  height: 90px;
+  height: auto;
 }
 
 .campagne-header-img img {
@@ -18228,8 +18234,8 @@ Main components
 
 .settings-sn-container {
   width: 100%;
-  height: 100px;
-  padding: 11px;
+  height: auto;
+  padding: 11px 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18271,7 +18277,7 @@ Main components
 .settings-sn-rs {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 185px;
 }
 
@@ -19483,4 +19489,45 @@ Main components
 
 .shadow-keeniz {
   box-shadow: 0 1px 9px 0px rgba(138, 138, 138, 0.27);
+}
+
+.settings-container-row {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.container#custom-width {
+  max-width: 100%;
+}
+
+.brand-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-logo img {
+  max-width: 70%;
+  border-radius: 100%;
+}
+
+.brand-name {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.brand-name span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.brand-name span:hover, .brand-logo img:hover  {
+  cursor: pointer;
 }
