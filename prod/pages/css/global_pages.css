@@ -1706,7 +1706,7 @@ body.sidebar-visible .page-sidebar .sidebar-header .sidebar-header-controls {
 
 .page-sidebar {
   width: 280px;
-  background-color: #053cc8;
+  background-color: #004FC5;
   z-index: 1000;
   left: -210px;
   position: fixed;
@@ -1756,7 +1756,7 @@ body.sidebar-visible .page-sidebar .sidebar-header .sidebar-header-controls {
   display: block;
   height: 60px;
   line-height: 60px;
-  background-color: #053cc8;
+  background-color: #004FC5;
   color: #fff;
   width: 100%;
   padding: 0 20px;
@@ -3678,8 +3678,8 @@ Alternate buttons
 
 .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #053CC8;
-  border-color: #053CC8;
+  background-color: #004FC5;
+  border-color: #004FC5;
 }
 
 .btn-primary.active, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary.active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled):active:hover, .show .dropdown-toggle.btn-primary {
@@ -5721,7 +5721,7 @@ body>.pgn-wrapper {
   -webkit-backface-visibility: hidden;
   width: 100%;
   display: block;
-  background-color: #053cc8;
+  background-color: #004FC5;
   height: 0px;
   content: "";
   left: 0;
@@ -7912,7 +7912,7 @@ form legend {
 }
 
 .radio.radio-success input[type="radio"]:checked+label:before {
-  border-color: #053CC8;
+  border-color: #004FC5;
 }
 
 .radio.radio-primary input[type="radio"]:checked+label:before {
@@ -16907,8 +16907,8 @@ Main components
   display: flex;
   justify-content: center;
   margin: 30px auto;
-  background-color: #053cc8;
-  border-color: #053cc8;
+  background-color: #004FC5;
+  border-color: #004FC5;
 }
 
 .btn-connexion:hover {
@@ -16982,7 +16982,7 @@ Main components
 .button-row-ls button {
   padding: 5px 10px;
   margin: 0 2px;
-  color: #053cc8 !important;
+  color: #004FC5 !important;
   font-weight: bold;
   background-color: #6484d44d !important;
   border-color: #6484d44d !important;
@@ -16992,8 +16992,8 @@ Main components
   padding: 5px 10px;
   margin: 0 2px;
   color: white !important;
-  background-color: #053cc8 !important;
-  border-color: #053cc8 !important;
+  background-color: #004FC5 !important;
+  border-color: #004FC5 !important;
 }
 
 .button-row-packs {
@@ -17003,8 +17003,8 @@ Main components
 
 .button-row-packs button {
   display: flex;
-  background-color: #053cc8 !important;
-  border-color: #053cc8 !important;
+  background-color: #004FC5 !important;
+  border-color: #004FC5 !important;
   color: #fff !important;
   margin: 0 10px;
   padding: 5px 27px;
@@ -17047,7 +17047,7 @@ Main components
 }
 
 .bg-keeniz {
-  background-color: #053cc8 !important;
+  background-color: #004FC5 !important;
 }
 
 .progress-tag {
@@ -17091,21 +17091,21 @@ Main components
 
 .tab-header-buttons button {
   display: flex;
-  background-color: #053cc8 !important;
-  border-color: #053cc8 !important;
+  background-color: #004FC5 !important;
+  border-color: #004FC5 !important;
   color: #fff !important;
   margin: 0 10px;
   padding: 5px 27px;
 }
 
 .page-link {
-  color: #053cc8 !important;
+  color: #004FC5 !important;
 }
 
 .page-item.active .page-link {
   color: #fff !important;
-  background-color: #053cc8 !important;
-  border-color: #053cc8 !important;
+  background-color: #004FC5 !important;
+  border-color: #004FC5 !important;
 }
 
 .agency-container {
@@ -17187,9 +17187,10 @@ Main components
 }
 
 .profile-left-side {
-  border-right: 5px solid #0000000d;
   flex: 0.5;
-  padding: 0 5rem;
+  padding: 0 2rem;
+  margin: 1.5rem 4rem;
+  border-radius: 20px;
 }
 
 .profile-photo {
@@ -17258,7 +17259,7 @@ Main components
 }
 
 .blue {
-  background-color: #053cc8;
+  background-color: #004FC5;
   color: #fff;
   margin: 0 10px;
 }
@@ -17333,7 +17334,7 @@ Main components
 
 .followers {
   flex-direction: row;
-  background-color: #053cc8;
+  background-color: #004FC5;
   color: white;
 }
 
@@ -17410,6 +17411,7 @@ Main components
   display: flex;
   margin: auto;
   margin-bottom: 2rem;
+  border: 1px solid #dedede;
 }
 
 .profile-projects-ls img {
@@ -17539,8 +17541,15 @@ Main components
   border-right: 1px solid #f1f1f1;
   height: 95%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
+}
+
+.ptp-ls img {
+  max-width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-left: 10px;
 }
 
 .ptp-ls h3 {
@@ -17612,7 +17621,7 @@ Main components
 }
 
 .ptp-rs-c-rs {
-  background-color: #053CC8;
+  background-color: #004FC5;
   color: #fff;
   height: 100%;
   width: 100px;
@@ -17649,8 +17658,8 @@ Main components
 
 .f-right {
   float: right;
-  background-color: #053cc8 !important;
-  border-color: #053cc8 !important;
+  background-color: #004FC5 !important;
+  border-color: #004FC5 !important;
   color: #fff !important;
   padding: 7px 50px;
 }
@@ -17659,17 +17668,20 @@ Main components
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 86.2%;
   height: 200px;
   border-radius: 20px;
   margin: 50px auto;
   box-shadow: 0 14px 50px -11px rgba(41, 55, 56, .36);
   background-color: #fff;
+  position: fixed;
+  z-index: 2;
 }
 
 .search-inf-filters .row {
   width: 95%;
   margin: 10px auto;
+  justify-content: space-evenly
 }
 
 .search-inf-filters button {
@@ -17698,6 +17710,11 @@ Main components
   background-color: #fff;
   box-shadow: 0 6px 20px -3px rgba(138, 138, 138, 0.27);
   margin: 0 0 50px 0;
+}
+
+.search-results-container {
+  padding-top: 20rem;
+  padding-bottom: 5rem;
 }
 
 .result-photo {
@@ -17732,7 +17749,7 @@ Main components
   margin: -29px 0 0 65%;
   padding: 16px 22px;
   border-radius: 30px;
-  border-color: #053CC8;
+  border-color: #004FC5;
 }
 
 .result-card #discover:hover {
@@ -17805,14 +17822,14 @@ Main components
 .result-bottom-row button {
   margin: 5px 3px;
   font-weight: bolder;
-  background-color: #053cc875;
-  color: #053CC8;
+  background-color: #004FC575;
+  color: #004FC5;
 }
 
 .result-bottom-row button:hover {
   margin: 5px 3px;
   font-weight: bolder;
-  background-color: #053cc8;
+  background-color: #004FC5;
   color: #fff;
 }
 
@@ -17912,7 +17929,7 @@ Main components
 
 .ap-double-stack-infos #agency-avatar {
   width: 10%;
-  margin: 0 0 -4.4rem 4.5rem;
+  margin: 0 0 -4.4rem 6.6rem;
   z-index: 2;
   position: absolute;
 }
@@ -18003,7 +18020,7 @@ Main components
 
 .ap-icons-container i:hover {
   cursor: pointer;
-  color: #053CC8;
+  color: #004FC5;
 }
 
 .ap-bottom-stack #space-card {
@@ -18108,7 +18125,7 @@ Main components
 }
 
 .sal-ls {
-  background-color: #053CC8;
+  background-color: #004FC5;
   width: 50px;
   display: flex;
   justify-content: center;
@@ -18218,8 +18235,8 @@ Main components
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 1px solid #053CC8;
-  color: #053CC8;
+  border: 1px solid #004FC5;
+  color: #004FC5;
 }
 
 .settings-warning span {
@@ -18271,7 +18288,7 @@ Main components
 
 .settings-sn-rs i:hover {
   cursor: pointer;
-  color: #053CC8;
+  color: #004FC5;
 }
 
 .settings-sn-rs {
@@ -18352,14 +18369,14 @@ Main components
 .campagne-tags button {
   margin-right: 1rem;
   border-radius: 25px;
-  color: #053CC8;
-  background-color: #053cc85c;
+  color: #004FC5;
+  background-color: #004FC55c;
   border-color: #fff;
 }
 
 .campagne-tags button:hover {
   color: #fff;
-  background-color: #053cc8;
+  background-color: #004FC5;
   border-color: #fff;
 }
 
@@ -18376,7 +18393,7 @@ Main components
   font-size: 16px;
   padding-left: 30px;
   font-weight: bold;
-  color: #053CC8;
+  color: #004FC5;
 }
 
 .moodboard-container img {
@@ -18465,7 +18482,7 @@ Main components
 }
 
 .cpc-status-waiting {
-  color: #053CC8;
+  color: #004FC5;
   font-size: 22px;
 }
 
@@ -18479,7 +18496,7 @@ Main components
 
 .cpc-icons i:hover {
   cursor: pointer;
-  color: #053CC8;
+  color: #004FC5;
 }
 
 .cpc-bot-part span {
@@ -18625,7 +18642,7 @@ Main components
 .po-list i {
   padding-right: 1rem;
   font-size: 20px;
-  color: #053CC8;
+  color: #004FC5;
 }
 
 .po-list li {
@@ -18641,7 +18658,7 @@ Main components
   width: 60%;
   height: 110px;
   box-shadow: 0 6px 20px 7px rgba(138, 138, 138, 0.27);
-  background-color: #053cc8;
+  background-color: #004FC5;
   padding: 24px 20px 5px 0;
 }
 
@@ -18706,7 +18723,7 @@ Main components
 }
 
 .option-ls.checkbox.check-primary input[type="checkbox"]:checked+label:before {
-  border-color: #053CC8!important;
+  border-color: #004FC5!important;
 }
 
 .more-options-container {
@@ -18806,7 +18823,7 @@ Main components
 .scrollspy-dot#dot1 {
   top: 92px;
   right: 80px;
-  background: #053cc8;
+  background: #004FC5;
 }
 
 .scrollspy-dot#dot2 {
@@ -18832,7 +18849,7 @@ Main components
 
 .progress-bar {
   height: 0%;
-  background: #053cc8;
+  background: #004FC5;
   width: 4px;
   transition: none;
 }
@@ -18871,7 +18888,7 @@ Main components
 .modal-message-header {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  background-color: #053CC8;
+  background-color: #004FC5;
   margin-bottom: 1rem;
 }
 
@@ -19025,7 +19042,7 @@ Main components
 }
 
 .inf-action-rs.checkbox.check-primary input[type="checkbox"]:checked+label:before {
-  border-color: #053CC8!important;
+  border-color: #004FC5!important;
 }
 
 .modal-message-content textarea {
@@ -19126,7 +19143,7 @@ Main components
 
 .analyse-sn-rs i:hover {
   cursor: pointer;
-  color: #053CC8;
+  color: #004FC5;
 }
 
 .analyse-sn-rs {
@@ -19154,7 +19171,7 @@ Main components
 }
 
 .analyse-rs-pagination a.active {
-  background-color: #053CC8;
+  background-color: #004FC5;
   font-weight: bold;
   color: white;
   border-radius: 5px;
@@ -19216,7 +19233,7 @@ Main components
 .analyse-link .fas:hover, .fa-external-link-alt:hover {
   cursor: pointer;
   transition: all 0.25s ease;
-  color: #053CC8;
+  color: #004FC5;
 }
 
 .analyse-link a {
@@ -19259,11 +19276,11 @@ Main components
 }
 
 .custom-radio.checkbox.check-keeniz input[type="checkbox"]:checked+label:before {
-  border-color: #053CC8;
+  border-color: #004FC5;
 }
 
 .checkbox.check-keeniz input[type="checkbox"]:checked+label:before {
-  border-color: #053CC8;
+  border-color: #004FC5;
 }
 
 .custom-radio.radio label:before, .custom-radio.checkbox label:before {
@@ -19330,12 +19347,12 @@ Main components
 .separator-line {
   width: 100%;
   height: 6px;
-  background-color: #053CC8;
+  background-color: #004FC5;
   border-radius: 4px;
 }
 
 .nc-photo-container .banner-photo img {
-  border: 4px solid #053CC8;
+  border: 4px solid #004FC5;
 }
 
 .nc-form-container .option-container {
@@ -19382,7 +19399,7 @@ Main components
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #053CC8;
+  background-color: #004FC5;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -19392,7 +19409,7 @@ Main components
 
 .synchro-overall-container .center-flex-items .fa-sync-alt {
   font-size: 16px;
-  color: #053CC8;
+  color: #004FC5;
   padding-right: 0.5rem;
 }
 
@@ -19459,7 +19476,7 @@ Main components
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  color: #053CC8;
+  color: #004FC5;
 }
 
 .single-stat p {
@@ -19530,4 +19547,103 @@ Main components
 
 .brand-name span:hover, .brand-logo img:hover  {
   cursor: pointer;
+}
+
+#border-keeniz {
+  border-radius: 20px;
+}
+
+.overall-stats-container p {
+  padding: 2rem;
+  padding-top: 3rem;
+  font-size: 20px!important;
+}
+
+.eng-total-ts, .eng-total-bs {
+  text-align: center;
+}
+
+.eng-total-ts {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.eng-total-bs {
+  font-size: 20px;
+}
+
+
+.graph-bar {
+  margin: 1rem 0;
+  padding: 3rem 0;
+}
+
+#lightorange {
+  background-color: #FDF0C9;
+}
+
+#orange {
+  background-color: #F9CCA4;
+}
+
+#lightblue {
+  background-color: #8CAFE4;
+}
+
+#blue {
+  background-color: #004EC6;
+}
+
+#align-span {
+  display: flex;
+  align-items: center;
+}
+
+#align-span span {
+  font-size: 18px;
+}
+
+#align-eng {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.legend-bar {
+  width: 70px;
+  height: 35px;
+  margin: 1rem;
+}
+
+.legend-container {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem; 
+}
+
+.legend-container span {
+  font-size: 16px;
+  padding-left: 1rem;
+}
+
+.overall-graph {
+  margin: 3rem auto;
+}
+
+#nc-cover {
+  padding-left: 5.8rem;
+}
+
+#nc-moodboard {
+  padding-left: 2.4rem;
+}
+
+#no-padding {
+  padding-left: unset!important;
+}
+
+#about-row p {
+  width: 60%;
+  font-size: 16px;
 }
