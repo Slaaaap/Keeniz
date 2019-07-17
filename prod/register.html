@@ -34,228 +34,165 @@
   </script>
 </head>
 
-<body class="fixed-header whiteBg">
-  <div class="register-container full-height sm-p-t-30">
-    <div class="d-flex justify-content-center flex-column full-height ">
-      <div class="register-logo-container">
-        <img class="registerLogo" src="assets/img/keeniz_logo.png" alt="logo" data-src="assets/img/keeniz_logo.png"
-          data-src-retina="assets/img/keeniz_logo.png">
+<body class="fixed-header whiteBg" onload="hideDiv();">
+  <div class="row" id="no-margin">
+    <div class="col-md-6" id="no-padding">
+      <div class="register-img-container">
+          <img src="./assets/img/profiles/lucaslenzi.jpg" alt="left-side" />
       </div>
-      <h4 class="black m-t-50">Créez votre compte Keeniz !<br/> Vous avez déjà un compte ? <a href="#"><b>C'est par ici
-            !</b></a>
-      </h4>
-      <form id="form-register" class="p-t-15" role="form" action="index.html">
-        <div class="row">
-          <div class="col-md-12">
-            <select class="cs-select cs-skin-slide" onchange="alert('cc');" data-init-plugin="cs-select" id="account-type"
-              >
-              <option disabled>Type de compte</option>
-              <option value="marque">Marque</option>
-              <option value="agence">Agence</option>
-              <option value="influenceur">Influenceur</option>
-            </select>
-          </div>
-        </div>
-
-
-        <div class="display-test">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group form-group-default">
-                <label>Prénom</label>
-                <input type="text" name="fname" class="form-control" required>
+    </div>
+    <div class="col-md-6">
+        <div class="register-container p-t-30">
+            <div class="d-flex justify-content-center flex-column">
+              <div class="register-logo-container">
+                <img class="registerLogo" src="assets/img/keeniz_logo.png" alt="logo" data-src="assets/img/keeniz_logo.png"
+                  data-src-retina="assets/img/keeniz_logo.png">
               </div>
+              <h4 class="black m-t-50">Créez votre compte Keeniz !<br /> Vous avez déjà un compte ? <a href="#"><b>C'est par ici
+                    !</b></a>
+              </h4>
+              <form id="form-register" class="p-t-15" role="form" action="index.html">
+                <div class="row">
+                  <div class="col-md-12">
+                    <select class="register-select" onchange="displayDiv(this)" id="account-type">
+                      <option disabled selected>Type de compte *</option>
+                      <option value="marque">Marque</option>
+                      <option value="agence">Agence</option>
+                      <option value="influenceur">Influenceur</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group required form-group-default">
+                      <label>Email</label>
+                      <input type="text" name="fname" class="form-control" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group required form-group-default">
+                      <label>Mot de passe</label>
+                      <input type="password" name="lname" class="form-control" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group required form-group-default">
+                      <label>Confirmation du mot de passe</label>
+                      <input type="text" name="uname" class="form-control" required>
+                    </div>
+                  </div>
+                </div>
+                <div id="brand-part">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group required form-group-default">
+                        <label>Nom de la marque</label>
+                        <input type="text" name="brand-name" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group required form-group-default">
+                        <label>URL du site internet</label>
+                        <input type="text" name="url" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group required form-group-default">
+                        <label>Pays</label>
+                        <input type="text" name="country" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group required form-group-default">
+                        <label>Téléphone</label>
+                        <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="agency-part">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group required form-group-default">
+                        <label>Nom de l'agence</label>
+                        <input type="text" name="brand-name" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group required form-group-default">
+                        <label>URL du site internet</label>
+                        <input type="text" name="url" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group required form-group-default">
+                        <label>Pays</label>
+                        <input type="text" name="country" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group required form-group-default">
+                        <label>Téléphone</label>
+                        <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="inf-part">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group required form-group-default">
+                        <label>Pseudo</label>
+                        <input type="text" name="brand-name" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group required form-group-default">
+                        <label>Nom</label>
+                        <input type="text" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group required form-group-default">
+                        <label>Prénom</label>
+                        <input type="text" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row m-t-10">
+                  <div class="col-lg-6 black">
+                    <p><small>En créant un compte, j'accepte les <a href="#">Conditions d'utilisation</a>.</small>
+                    </p>
+                  </div>
+                  <div class="col-lg-6 text-right">
+                    <a href="#">Besoin d'aide ?</a>
+                  </div>
+                </div>
+                <div class="register-logo-container m-t-50">
+                  <button class="btn btn-primary btn-cons m-t-10" type="submit" id="register-btn">Créer un compte</button>
+                </div>
+              </form>
             </div>
-            <div class="col-md-6">
-              <div class="form-group form-group-default">
-                <label>Nom</label>
-                <input type="text" name="lname" class="form-control" required>
-              </div>
-            </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group form-group-default">
-                <label>Email</label>
-                <input type="text" name="uname" class="form-control" required>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group form-group-default">
-                <label>Mot de passe</label>
-                <input type="password" name="pass" placeholder="8 caractères minimum" class="form-control" required>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group form-group-default">
-                <label>Confirmation du mot de passe</label>
-                <input type="password" name="pass" class="form-control" required>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row m-t-10">
-          <div class="col-lg-6 black">
-            <p><small>En créant un compte, j'accepte les <a href="#">Conditions d'utilisation</a>.</small>
-            </p>
-          </div>
-          <div class="col-lg-6 text-right">
-            <a href="#">Besoin d'aide ?</a>
-          </div>
-        </div>
-        <div class="register-logo-container m-t-50">
-          <button class="btn btn-primary btn-cons m-t-10" type="submit">Créer un compte</button>
-        </div>
-      </form>
     </div>
   </div>
-  <!-- START OVERLAY -->
-  <div class="overlay hide" data-pages="search">
-    <!-- BEGIN Overlay Content !-->
-    <div class="overlay-content has-results m-t-20">
-      <!-- BEGIN Overlay Header !-->
-      <div class="container-fluid">
-        <!-- BEGIN Overlay Logo !-->
-        <img class="overlay-brand" src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png"
-          data-src-retina="assets/img/logo_2x.png" width="78" height="22">
-        <!-- END Overlay Logo !-->
-        <!-- BEGIN Overlay Close !-->
-        <a href="#" class="close-icon-light overlay-close text-black fs-16">
-          <i class="pg-close"></i>
-        </a>
-        <!-- END Overlay Close !-->
-      </div>
-      <!-- END Overlay Header !-->
-      <div class="container-fluid">
-        <!-- BEGIN Overlay Controls !-->
-        <input id="overlay-search" class="no-border overlay-search bg-transparent" placeholder="Search..."
-          autocomplete="off" spellcheck="false">
-        <br>
-        <div class="inline-block">
-          <div class="checkbox right">
-            <input id="checkboxn" type="checkbox" value="1" checked="checked">
-            <label for="checkboxn"><i class="fa fa-search"></i> Search within page</label>
-          </div>
-        </div>
-        <div class="inline-block m-l-10">
-          <p class="fs-13">Press enter to search</p>
-        </div>
-        <!-- END Overlay Controls !-->
-      </div>
-      <!-- BEGIN Overlay Search Results, This part is for demo purpose, you can add anything you like !-->
-      <div class="container-fluid">
-        <span>
-          <strong>suggestions :</strong>
-        </span>
-        <span id="overlay-suggestions"></span>
-        <br>
-        <div class="search-results m-t-40">
-          <p class="bold">Pages Search Results</p>
-          <div class="row">
-            <div class="col-md-6">
-              <!-- BEGIN Search Result Item !-->
-              <div class="">
-                <!-- BEGIN Search Result Item Thumbnail !-->
-                <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                  <div>
-                    <img width="50" height="50" src="assets/img/profiles/avatar.jpg"
-                      data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg"
-                      alt="">
-                  </div>
-                </div>
-                <!-- END Search Result Item Thumbnail !-->
-                <div class="p-l-10 inline p-t-5">
-                  <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on pages</h5>
-                  <p class="hint-text">via john smith</p>
-                </div>
-              </div>
-              <!-- END Search Result Item !-->
-              <!-- BEGIN Search Result Item !-->
-              <div class="">
-                <!-- BEGIN Search Result Item Thumbnail !-->
-                <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                  <div>T</div>
-                </div>
-                <!-- END Search Result Item Thumbnail !-->
-                <div class="p-l-10 inline p-t-5">
-                  <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> related topics</h5>
-                  <p class="hint-text">via pages</p>
-                </div>
-              </div>
-              <!-- END Search Result Item !-->
-              <!-- BEGIN Search Result Item !-->
-              <div class="">
-                <!-- BEGIN Search Result Item Thumbnail !-->
-                <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                  <div><i class="fa fa-headphones large-text "></i>
-                  </div>
-                </div>
-                <!-- END Search Result Item Thumbnail !-->
-                <div class="p-l-10 inline p-t-5">
-                  <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> music</h5>
-                  <p class="hint-text">via pagesmix</p>
-                </div>
-              </div>
-              <!-- END Search Result Item !-->
-            </div>
-            <div class="col-md-6">
-              <!-- BEGIN Search Result Item !-->
-              <div class="">
-                <!-- BEGIN Search Result Item Thumbnail !-->
-                <div class="thumbnail-wrapper d48 circular bg-info text-white inline m-t-10">
-                  <div><i class="fa fa-facebook large-text "></i>
-                  </div>
-                </div>
-                <!-- END Search Result Item Thumbnail !-->
-                <div class="p-l-10 inline p-t-5">
-                  <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on facebook</h5>
-                  <p class="hint-text">via facebook</p>
-                </div>
-              </div>
-              <!-- END Search Result Item !-->
-              <!-- BEGIN Search Result Item !-->
-              <div class="">
-                <!-- BEGIN Search Result Item Thumbnail !-->
-                <div class="thumbnail-wrapper d48 circular bg-complete text-white inline m-t-10">
-                  <div><i class="fa fa-twitter large-text "></i>
-                  </div>
-                </div>
-                <!-- END Search Result Item Thumbnail !-->
-                <div class="p-l-10 inline p-t-5">
-                  <h5 class="m-b-5">Tweats on<span class="semi-bold result-name"> ice cream</span></h5>
-                  <p class="hint-text">via twitter</p>
-                </div>
-              </div>
-              <!-- END Search Result Item !-->
-              <!-- BEGIN Search Result Item !-->
-              <div class="">
-                <!-- BEGIN Search Result Item Thumbnail !-->
-                <div class="thumbnail-wrapper d48 circular text-white bg-danger inline m-t-10">
-                  <div><i class="fa fa-google-plus large-text "></i>
-                  </div>
-                </div>
-                <!-- END Search Result Item Thumbnail !-->
-                <div class="p-l-10 inline p-t-5">
-                  <h5 class="m-b-5">Circles on<span class="semi-bold result-name"> ice cream</span></h5>
-                  <p class="hint-text">via google plus</p>
-                </div>
-              </div>
-              <!-- END Search Result Item !-->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END Overlay Search Results !-->
-    </div>
-    <!-- END Overlay Content !-->
-  </div>
-  <!-- END OVERLAY -->
   <!-- BEGIN VENDOR JS -->
   <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
   <script src="assets/plugins/jquery/jquery-3.2.1.min.js" type="text/javascript"></script>
@@ -280,8 +217,36 @@
     })
   </script>
   <script>
+    function hideDiv() {
+      document.getElementById('brand-part').style.display = "none"
+      document.getElementById('agency-part').style.display = "none"
+      document.getElementById('inf-part').style.display = "none"
+      document.getElementById('register-btn').style.display = "none"
+    }
+
     function displayDiv(sel) {
-      alert(sel.options[sel.selectedIndex].text);
+      var accountType = sel.options[sel.selectedIndex].text
+      switch (accountType) {
+        case 'Marque':
+          document.getElementById('brand-part').style.display = "block"
+          document.getElementById('agency-part').style.display = "none"
+          document.getElementById('inf-part').style.display = "none"
+          document.getElementById('register-btn').style.display = "block"
+          break;
+        case 'Agence':
+          document.getElementById('brand-part').style.display = "none"
+          document.getElementById('agency-part').style.display = "block"
+          document.getElementById('inf-part').style.display = "none"
+          document.getElementById('register-btn').style.display = "block"
+          break;
+        case 'Influenceur':
+          document.getElementById('brand-part').style.display = "none"
+          document.getElementById('agency-part').style.display = "none"
+          document.getElementById('inf-part').style.display = "block"
+          document.getElementById('register-btn').style.display = "block"
+          break;
+        default:
+      }
     }
   </script>
 </body>

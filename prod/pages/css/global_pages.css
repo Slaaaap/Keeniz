@@ -17541,7 +17541,6 @@ Main components
   border-right: 1px solid #f1f1f1;
   height: 95%;
   display: flex;
-  
 }
 
 .ptp-ls img {
@@ -19545,7 +19544,7 @@ Main components
   font-weight: bold;
 }
 
-.brand-name span:hover, .brand-logo img:hover  {
+.brand-name span:hover, .brand-logo img:hover {
   cursor: pointer;
 }
 
@@ -19571,7 +19570,6 @@ Main components
 .eng-total-bs {
   font-size: 20px;
 }
-
 
 .graph-bar {
   margin: 1rem 0;
@@ -19619,7 +19617,7 @@ Main components
 .legend-container {
   display: flex;
   align-items: center;
-  padding-left: 1rem; 
+  padding-left: 1rem;
 }
 
 .legend-container span {
@@ -19646,4 +19644,34 @@ Main components
 #about-row p {
   width: 60%;
   font-size: 16px;
+}
+
+.register-select {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #00000012;
+  padding: 0 0.6rem;
+  margin-bottom: 10px;
+  color: #626262;
+  font-family: "Montserrat";
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.register-img-container img {
+  max-width: 100%;
+  width: 100%;
+  height: -webkit-fill-available;
+  object-fit: cover;
+}
+
+#no-margin {
+  margin: unset!important
+}
+
+.register-logo-container button:hover {
+  background-color: #0144a7;
+  border-color: #0144a7;
 }
