@@ -6287,7 +6287,7 @@ body>.pgn-wrapper {
 }
 
 .modal .modal-content {
-  border: 1px solid #f2f6f7;
+  border: 1px solid transparent;
   border-radius: 3px;
   box-shadow: none;
 }
@@ -12634,7 +12634,6 @@ Responsive Util
 }
 
 .register-container {
-  width: 550px;
   margin: auto;
   height: 100%;
 }
@@ -17503,7 +17502,7 @@ Main components
 }
 
 .registerLogo {
-  width: 50%;
+  width: 17vw;
   height: 100%;
 }
 
@@ -18804,7 +18803,7 @@ Main components
 }
 
 .scrollspy-progress-bar {
-  width: 50%;
+  width: 10vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18820,21 +18819,21 @@ Main components
 }
 
 .scrollspy-dot#dot1 {
-  top: 92px;
-  right: 80px;
+  top: 13vh;
+  right: 3.9vw;
   background: #004FC5;
 }
 
 .scrollspy-dot#dot2 {
-  top: 214px;
-  right: 80px;
+  top: 28vh;
+  right: 3.9vw;
   transition: all 0.15s ease;
   background: #ccc;
 }
 
 .scrollspy-dot#dot3 {
-  bottom: 87px;
-  right: 80px;
+  bottom: 12vh;
+  right: 3.9vw;
   transition: all 0.15s ease;
   background: #ccc;
 }
@@ -19278,9 +19277,19 @@ Main components
   border-color: #004FC5;
 }
 
+.custom-radio.radio.check-keeniz input[type="radio"]:checked+label:before {
+  border-color: #004FC5;
+}
+
 .checkbox.check-keeniz input[type="checkbox"]:checked+label:before {
   border-color: #004FC5;
 }
+
+.radio.check-keeniz input[type="radio"]:checked+label:before {
+  border-color: #004FC5;
+}
+
+
 
 .custom-radio.radio label:before, .custom-radio.checkbox label:before {
   width: 37px;
@@ -19663,7 +19672,7 @@ Main components
 .register-img-container img {
   max-width: 100%;
   width: 100%;
-  height: -webkit-fill-available;
+  height: 110vh;
   object-fit: cover;
 }
 
@@ -19674,4 +19683,14 @@ Main components
 .register-logo-container button:hover {
   background-color: #0144a7;
   border-color: #0144a7;
+}
+
+@media (max-width: 768px) {
+  .hideMe {
+    display: none!important;
+  }
+  .registerLogo {
+    width: 42vw;
+    height: 100%;
+  }
 }
