@@ -178,7 +178,7 @@
         <div class=" container-fluid   container-fixed-lg">
           <!-- BEGIN PlACE PAGE CONTENT HERE -->
           <div class="container m-t-50" id="custom-width">
-            <div class="row">
+            <div class="row" id="collapsible-row">
               <div class="col-md-6">
                 <div class="dashboard-card">
                   <div class="dashboard-card-header">
@@ -194,11 +194,11 @@
                       <h4 class="bold">Airbnb</h4>
                       <p>France</p>
                       <div class="button-row">
-                        <div class="button-row-ls">
+                        <div class="button-row-ls" id="get-space-btn">
                           <button class="btn btn-tag btn-tag-light btn-tag-rounded ">Voyages</button>
-                          <button class="btn btn-tag btn-tag-light btn-tag-rounded ">Lifestyle</button>
+                          <button class="btn btn-tag btn-tag-light btn-tag-rounded " >Lifestyle</button>
                         </div>
-                        <div class="button-row-rs">
+                        <div class="button-row-rs" id="get-space-btn">
                           <button class="btn btn-tag btn-tag-light btn-tag-rounded">Modifier</button>
                           <button class="btn btn-tag btn-tag-light btn-tag-rounded">Aperçu</button>
                         </div>
@@ -215,14 +215,22 @@
                   <hr />
                   <p class="m-t-20 m-l-20 fs-14">Sélectionnez l'offre ou les options adaptées à vos besoins.</p>
                   <div class="button-row-packs m-t-35">
-                    <button class="btn btn-tag btn-tag-light btn-tag-rounded ">Packs Keeniz</button>
-                    <button class="btn btn-tag btn-tag-light btn-tag-rounded ">Options Keeniz</button>
+                    <button class="btn btn-tag btn-tag-light btn-tag-rounded " id="get-space-btn" >Packs Keeniz</button>
+                    <button class="btn btn-tag btn-tag-light btn-tag-rounded " id="get-space-btn">Options Keeniz</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row m-t-50">
+              <div class="col-md-12" id="get-space">
+                <div class="tab-header-buttons">
+                  <button class="btn btn-tag btn-tag-light btn-tag-rounded " id="get-space-btn">Créer une nouvelle campagne</button>
+                  <button class="btn btn-tag btn-tag-light btn-tag-rounded ">Ajouter des options à vos
+                    projets</button>
+                </div>
+              </div>
               <div class="col-md-12">
+
                 <div class="panel">
                   <div class="tab-header m-b-10">
                     <ul class="nav nav-tabs nav-tabs-simple">
@@ -233,11 +241,6 @@
                         <a data-toggle="tab" href="#tab2FollowUs">Sponsoring</a>
                       </li>
                     </ul>
-                    <div class="tab-header-buttons">
-                      <button class="btn btn-tag btn-tag-light btn-tag-rounded ">Créer une nouvelle campagne</button>
-                      <button class="btn btn-tag btn-tag-light btn-tag-rounded ">Ajouter des options à vos
-                        projets</button>
-                    </div>
                   </div>
                   <div class="tab-content">
                     <div class="tab-pane active" id="tab2hellowWorld">
@@ -442,7 +445,7 @@
                               </tbody>
                             </table>
                           </div>
-                          <ul class="pagination center">
+                          <ul class="pagination center m-b-20">
                             <li class="page-item disabled">
                               <a class="page-link" href="#" title="Back"><i class="material-icons keyboard_arrow_left">
                                   <</i> </a> </li> <li class="page-item">

@@ -2073,7 +2073,7 @@ body.sidebar-visible .page-sidebar .sidebar-header .sidebar-header-controls {
 }
 
 .icon-thumbnail>i {
-  font-size: 18px;
+  font-size: 0.85vw;
 }
 
 .icon-thumbnail>svg {
@@ -2852,7 +2852,7 @@ code:hover {
 
 p {
   display: block;
-  font-size: 14px;
+  font-size: 1vw;
   font-weight: normal;
   letter-spacing: 0.01em;
   line-height: 22px;
@@ -5600,7 +5600,7 @@ body>.pgn-wrapper {
   font-weight: 500;
   letter-spacing: 0.06em;
   color: rgba(98, 98, 98, 0.7);
-  font-size: 15.5px;
+  font-size: 0.9vw;
   min-width: 70px;
   text-transform: uppercase;
   border-color: transparent;
@@ -10113,7 +10113,7 @@ div.cs-skin-slide .cs-options ul li span:hover, div.cs-skin-slide .cs-options ul
   text-transform: uppercase;
   font-weight: 500;
   font-family: "Montserrat";
-  font-size: 10.5px;
+  font-size: 0.9vw;
   letter-spacing: 0.06em;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -16927,12 +16927,13 @@ Main components
 }
 
 .dashboard-card {
-  width: 90%;
-  height: 165px;
+  width: 42vw;
+  height: 175px;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0px 0px 20px -1px #bbbbbb6b;
   margin: auto;
+  padding-bottom: 1rem;
 }
 
 .dashboard-card-header {
@@ -16968,6 +16969,8 @@ Main components
 .button-row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .button-row-ls {
@@ -17010,17 +17013,17 @@ Main components
 }
 
 .td-thumbnail {
-  width: 35%;
+  width: 20%;
   height: 100%;
 }
 
 .td-thumbnail-collab {
-  width: 26%;
+  width: 20%;
   height: 100%;
 }
 
 .td-thumbnail-campaign {
-  width: 27%;
+  width: 20%;
   height: 100%;
 }
 
@@ -17086,6 +17089,9 @@ Main components
   display: flex;
   height: 30px;
   margin-top: 10px;
+  float: right;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tab-header-buttons button {
@@ -17186,7 +17192,7 @@ Main components
 }
 
 .profile-left-side {
-  flex: 0.5;
+  flex: 0.3;
   padding: 0 2rem;
   margin: 1.5rem 4rem;
   border-radius: 20px;
@@ -17229,9 +17235,7 @@ Main components
   cursor: pointer;
 }
 
-.profile-container {
-  flex-wrap: wrap;
-}
+.profile-container {}
 
 .profile-info {
   display: flex;
@@ -17282,7 +17286,7 @@ Main components
 .profile-title {
   margin: 30px auto 15px auto;
   max-width: 90%;
-  font-size: 20px;
+  font-size: 1.4vw;
   font-weight: bold !important;
   padding-top: 15px;
 }
@@ -17291,7 +17295,7 @@ Main components
   max-width: 90%;
   text-align: justify;
   margin: auto;
-  font-size: 17px;
+  font-size: 0.9vw;
 }
 
 .gallery-row {
@@ -17312,7 +17316,8 @@ Main components
 }
 
 .profile-right-side {
-  flex: 0.9;
+  flex: 0.6;
+  width: 48vw;
 }
 
 .profile-stats-row {
@@ -17322,9 +17327,8 @@ Main components
 }
 
 .profile-stat {
-  width: 25%;
+  width: 14vw;
   height: 115px;
-  min-width: 230px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17345,16 +17349,16 @@ Main components
 .profile-stat-right-side {
   width: 50%;
   text-align: center;
-  font-size: 55px;
+  font-size: 3.5vw;
 }
 
 .profile-stat span {
-  font-size: 27px;
+  font-size: 1.5vw;
   font-weight: bold;
 }
 
 .profile-stat p {
-  font-size: 20px;
+  font-size: 1vw;
   font-weight: 600;
   margin-top: 0.7rem;
   text-align: center;
@@ -17376,10 +17380,6 @@ Main components
 .profile-stats-right-graph {
   width: 80%;
   margin: 1rem 0 1rem 0;
-}
-
-.right-graph-height {
-  height: 447px !important;
 }
 
 @media (max-width: 1115px) {
@@ -17443,7 +17443,7 @@ Main components
   text-align: center;
 }
 
-@media (max-width: 1305px) {
+@media (max-width: 1490px) {
   .profile-projects-container {
     flex-direction: column;
     align-items: center;
@@ -17523,16 +17523,14 @@ Main components
 
 .pay-top-part, .pay-left-part, .pay-right-part {
   background-color: #fff;
-  width: 100%;
-  height: 350px;
+  width: 95%;
   border-radius: 20px;
   margin: 20px auto;
-  box-shadow: 0px 0px 20px 0px #BBBBBB;
+  box-shadow: 0 1px 9px 0px rgba(138, 138, 138, 0.27);
 }
 
 .pay-top-part {
   display: flex;
-  align-items: center;
 }
 
 .ptp-ls {
@@ -17562,7 +17560,6 @@ Main components
   justify-content: space-between;
   align-items: center;
   width: 50%;
-  height: 95%;
   padding: 25px 0;
 }
 
@@ -17607,7 +17604,7 @@ Main components
 .ptp-rs-checkout {
   width: 85%;
   display: flex;
-  justify-content: inherit;
+  justify-content: space-between;
   border: 1px solid #bbb;
   align-items: center;
   height: 65px;
@@ -17644,6 +17641,7 @@ Main components
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .pay-form-border {
@@ -18026,7 +18024,7 @@ Main components
 }
 
 .profile-settings-container {
-  width: 100%;
+  width: 95%;
   margin: 2rem auto;
   border-radius: 25px;
   box-shadow: 0 6px 20px 7px rgba(138, 138, 138, 0.27);
@@ -18964,6 +18962,7 @@ Main components
 
 .gallery-thumbnail img {
   max-width: 85%;
+  object-fit: cover;
 }
 
 .gallery-thumbnail h3 {
@@ -19288,8 +19287,6 @@ Main components
 .radio.check-keeniz input[type="radio"]:checked+label:before {
   border-color: #004FC5;
 }
-
-
 
 .custom-radio.radio label:before, .custom-radio.checkbox label:before {
   width: 37px;
@@ -19685,6 +19682,10 @@ Main components
   border-color: #0144a7;
 }
 
+.responsive-btn {
+  padding: 0.6vh 1.2vw;
+}
+
 @media (max-width: 768px) {
   .hideMe {
     display: none!important;
@@ -19692,5 +19693,131 @@ Main components
   .registerLogo {
     width: 42vw;
     height: 100%;
+  }
+  .profile-left-side {
+    width: 95%!important;
+    padding: 0 0.8rem;
+  }
+  .profile-right-side {
+    width: 95%!important;
+  }
+  .profile-stat {
+    width: 23vw;
+  }
+  .profile-stat span {
+    font-size: 3vw;
+  }
+  .profile-stat p {
+    font-size: 1.9vw;
+  }
+  .profile-stats-left-graph .col-md-12 {
+    padding: unset;
+  }
+  .profile-stats-right-graph .col-md-12 {
+    padding: unset;
+  }
+  .profile-right-side .nav-tabs>li>a {
+    font-size: 2.5vw;
+  }
+  .td-thumbnail {
+    width: 50%;
+  }
+  .td-thumbnail-campaign {
+    width: 50%;
+  }
+  .td-thumbnail-collab {
+    width: 50%;
+  }
+  .brand-logo img {
+    max-width: 20%;
+    border-radius: 100%;
+}
+}
+
+@media (max-width: 1200px) {
+  .profile-about p {
+    font-size: 12px;
+  }
+  .profile-container {
+    flex-direction: column;
+  }
+  .profile-right-side {
+    margin: auto;
+    width: 67vw;
+  }
+  .profile-left-side {
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+  .profile-title {
+    font-size: 14px;
+  }
+}
+
+#display-gallery {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  #display-gallery {
+    display: block;
+  }
+  #no-gallery {
+    display: none;
+  }
+  #h2-resp {
+    font-size: 3.6vw!important;
+  }
+  .more-agencies-abs {
+    display: none;
+  }
+  .agency-container img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 991px) {
+  #collapsible-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  #collapsible-row .col-md-6 {
+    max-width: 100%;
+  }
+  .dashboard-card {
+    width: 100%;
+    margin: 1rem auto 0 auto;
+    padding-bottom: 1rem;
+    height: auto;
+  }
+  .nav-tabs>li>a {
+    font-size: 11.1px;
+    padding: 13px 6px;
+  }
+  .table thead tr th {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 581px) {
+  #get-space {
+    margin: -1rem auto 4rem auto;
+  }
+  #get-space-btn {
+    margin-bottom: 1rem;
+  }
+  #get-space-btn {
+    margin-bottom: 1rem;
+  }
+  .button-row {
+    justify-content: flex-start;
+  }
+}
+
+/* LIMIT SIZE OF TEXT */
+
+@media (min-width: 1200px) {
+  .table thead tr th {
+    font-size: 12px;
   }
 }
