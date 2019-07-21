@@ -169,58 +169,63 @@
         <!-- START CONTAINER FLUID -->
         <div class=" container-fluid   container-fixed-lg">
           <!-- BEGIN PlACE PAGE CONTENT HERE -->
-          <div class="search-inf-filters">
-            <div class="row">
-              <div class="col-md-2">
-                <div class="form-group form-group-default">
-                  <label>Nom</label>
-                  <input type="text" class="form-control" />
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="cs-select cs-skin-slide" tabindex="0">
-                  <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                    <option disabled>Plateforme</option>
-                    <option>Toutes</option>
-                    <option>YouTube</option>
-                    <option>Instagram</option>
-                    <option>Snapchat</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-3">
-                  <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
+          <div class="row">
+            <div class="fixed-top-filters col-md-12">
+              <div class="search-inf-filters">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="form-group form-group-default" id="name-filter">
+                      <label>Nom</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="cs-select cs-skin-slide" tabindex="0">
+                      <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
+                        <option disabled>Plateforme</option>
+                        <option>Toutes</option>
+                        <option>YouTube</option>
+                        <option>Instagram</option>
+                        <option>Snapchat</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
                       <option disabled>Rémunération</option>
                       <option>Toutes</option>
                       <option>>100€</option>
                       <option>>500€</option>
                       <option>>1 000€</option>
                     </select>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
+                      <option disabled>Domaine</option>
+                      <option>Tous</option>
+                      <option>Lifestyle</option>
+                      <option>Mode</option>
+                      <option>Sport</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <button class="btn btn-tag btn-tag-rounded bg-keeniz white">Appliquer les filtres</button>
+                </div>
               </div>
-              <div class="col-md-3">
-                <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                  <option disabled>Domaine</option>
-                  <option>Tous</option>
-                  <option>Lifestyle</option>
-                  <option>Mode</option>
-                  <option>Sport</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <button class="btn btn-tag btn-tag-rounded bg-keeniz white">Appliquer les filtres</button>
             </div>
           </div>
+
           <div class="search-results-container">
-            <div class="row">
+            <div class="row" id="search-result-row">
               <div class="col-md-6">
-                <div class="project-card">
+                <div class="project-card shadow-keeniz">
                   <div class="project-card-ls">
                     <h4>Run in the city</h4>
                     <p>Par <a href="#">Adidas</a>, France</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                       labore et dolore magna aliqua. Ut enim ad mini...</p>
-                    <button class="btn btn-tag btn-tag-rounded bg-keeniz white" id="discover-p">Découvrir</button>
+                    <div class="discover-project">Découvrir</div>
                     <button class="btn btn-tag btn-tag-rounded" id="project-in-progress">En cours</button>
                   </div>
                   <div class="project-card-rs">
@@ -229,13 +234,13 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="project-card">
+                <div class="project-card shadow-keeniz">
                   <div class="project-card-ls">
                     <h4>Travel the world</h4>
                     <p>Par <a href="#">Booking.com</a>, France</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                       labore et dolore magna aliqua. Ut enim ad mini...</p>
-                    <button class="btn btn-tag btn-tag-rounded bg-keeniz white" id="discover-p">Découvrir</button>
+                    <div class="discover-project">Découvrir</div>
                     <button class="btn btn-tag btn-tag-rounded" id="project-over">Terminé</button>
                   </div>
                   <div class="project-card-rs">
@@ -244,15 +249,15 @@
                 </div>
               </div>
             </div>
-            <div class="row m-t-30">
+            <div class="row m-t-30" id="search-result-row">
               <div class="col-md-6">
-                <div class="project-card">
+                <div class="project-card shadow-keeniz">
                   <div class="project-card-ls">
                     <h4>Dream</h4>
                     <p>Par <a href="#">Booking.com</a>, France</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                       labore et dolore magna aliqua. Ut enim ad mini...</p>
-                    <button class="btn btn-tag btn-tag-rounded bg-keeniz white" id="discover-p">Découvrir</button>
+                    <div class="discover-project">Découvrir</div>
                     <button class="btn btn-tag btn-tag-rounded" id="project-over">Terminé</button>
                   </div>
                   <div class="project-card-rs">
@@ -261,13 +266,13 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="project-card">
+                <div class="project-card shadow-keeniz">
                   <div class="project-card-ls">
                     <h4>Dream</h4>
                     <p>Par <a href="#">Booking.com</a>, France</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                       labore et dolore magna aliqua. Ut enim ad mini...</p>
-                    <button class="btn btn-tag btn-tag-rounded bg-keeniz white" id="discover-p">Découvrir</button>
+                    <div class="discover-project">Découvrir</div>
                     <button class="btn btn-tag btn-tag-rounded" id="project-in-progress">En cours</button>
                   </div>
                   <div class="project-card-rs">

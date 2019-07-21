@@ -172,19 +172,33 @@
           <div class="pay-container">
             <div class="row">
               <div class="col-md-12">
-                <div class="pay-top-part">
+                <div class="pay-top-part shadow-keeniz">
                   <div class="ptp-ls">
                     <img src="./assets/img/payment.jpg" alt="payment" />
                   </div>
                   <div class="ptp-rs">
                     <div class="ptp-rs-list">
                       <div class="ptp-rs-item">
-                        <i class="fas fa-times"></i> Publication d'une campagne : <b>Comme un parfum de naturel</b>
-                        <span>50€</span>
+                        <div class="row">
+                          <div class="col-md-11">
+                            <i class="fas fa-times"></i>
+                            Publication d'une campagne : <b>Comme un parfum de naturel</b>
+                          </div>
+                          <div class="col-md-1">
+                            <span class="bold">50€</span>
+                          </div>
+                        </div>
                       </div>
                       <div class="ptp-rs-item">
-                        <i class="fas fa-times"></i> Analyse de la campagne : <b>Comme un parfum de naturel</b>
-                        <span>70€</span>
+                        <div class="row">
+                          <div class="col-md-11">
+                            <i class="fas fa-times"></i>
+                            Analyse de la campagne : <b>Comme un parfum de naturel</b>
+                          </div>
+                          <div class="col-md-1">
+                            <span class="bold">70€</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="ptp-rs-checkout">
@@ -200,9 +214,9 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row" id="pay-form-row">
               <div class="col-md-7">
-                <div class="pay-left-part plp-center">
+                <div class="pay-left-part plp-center shadow-keeniz">
                   <div class="plp-container">
                     <div class="row">
                       <div class="col-md-6">
@@ -267,7 +281,7 @@
                 </div>
               </div>
               <div class="col-md-5">
-                <div class="pay-right-part">
+                <div class="pay-right-part shadow-keeniz">
                   <div class="bg-master-light padding-30 b-rad-lg" id="payment">
                     <h2 class="pull-left no-margin">Credit Card</h2>
                     <ul class="list-unstyled pull-right list-inline no-margin">
@@ -357,7 +371,9 @@
               </div>
             </div>
           </div>
-          <button class="btn btn-tag btn-tag-rounded f-right">Confirmer</button>
+          <div class="btn-pay">
+            <button class="btn btn-tag btn-tag-rounded f-right" id="confirm-payment">Confirmer</button>
+          </div>
           <!-- END PLACE PAGE CONTENT HERE -->
         </div>
         <!-- END CONTAINER FLUID -->

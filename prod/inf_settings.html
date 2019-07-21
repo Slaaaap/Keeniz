@@ -185,7 +185,7 @@
               </ul>
               <div class="tab-content">
                 <div class="tab-pane active" id="tab2Profile">
-                  <div class="row column-seperation">
+                  <div class="row column-seperation" id="settings-responsive-row">
                     <div class="col-md-3 border-r-grey">
                       <div class="settings-col-one">
                         <h5 class="bold">Photo de profil</h5>
@@ -212,21 +212,23 @@
                       <div class="settings-col-two">
                         <h5 class="bold m-b-50"> Informations personnelles </h5>
                         <div class="row">
-                          <div class="col-md-4">
+                          <div class="col-md-12">
+                            <div class="form-group form-group-default required">
+                              <label>Pseudonyme</label>
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
                             <div class="form-group form-group-default required">
                               <label>Nom</label>
                               <input type="text" class="form-control" />
                             </div>
                           </div>
-                          <div class="col-md-4">
+                          <div class="col-md-6">
                             <div class="form-group form-group-default required">
                               <label>Prénom</label>
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="form-group form-group-default required">
-                              <label>Pseudonyme</label>
                               <input type="text" class="form-control" />
                             </div>
                           </div>
@@ -334,9 +336,8 @@
                                 </div>
                               </div>
                               <div class="row settings-container-row m-t-20">
-                                <div class="col-md-7"></div>
-                                <div class="col-md-5">
-                                  <div class="settings-sn-rs">
+                                <div class="col-md-12">
+                                  <div class="settings-sn-rs-both">
                                     <i class="fas fa-sign-out-alt"></i>
                                     <button class="btn btn-tag btn-tag-rounded" id="settings-connected">
                                       Connecté
@@ -369,11 +370,9 @@
                             <div class="settings-sn-container">
                               <div class="settings-sn-ls">
                                 <div class="settings-sn-icon-container">
-                                  <span>Blog</span>
+                                    <i class="fas fa-blog"></i>
                                 </div>
-                                <span>Blog
-                                  <p id="no-margin">Via Google Analytics</p>
-                                </span>
+                                <span>Blog</span>
                               </div>
                               <br />
                               <div class="settings-sn-rs">
@@ -397,7 +396,7 @@
                 </div>
                 <div class="tab-pane" id="tab2Password">
                   <div class="row">
-                    <div class="col-md-12 p-l-50 p-r-50">
+                    <div class="col-md-12 p-l-50 p-r-50" id="settings-padding-resp">
                       <div class="account-settings-container">
                         <div class="form-group form-group-default required">
                           <label>Email</label>
@@ -423,7 +422,7 @@
                 </div>
                 <div class="tab-pane" id="tab2Bank">
                   <div class="row">
-                    <div class="col-md-12 p-l-50 p-r-50">
+                    <div class="col-md-12 p-l-50 p-r-50" id="settings-padding-resp">
                       <div class="account-settings-container">
                         <div class="settings-warning m-b-20">
                           <span>Important</span>
