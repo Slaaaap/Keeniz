@@ -18657,9 +18657,14 @@ Main components
   right: 30px;
 }
 
+#mensuel {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .po-duration {
   margin: 0 auto 20px auto;
-  width: 20%;
+  width: 290px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18680,7 +18685,7 @@ Main components
 }
 
 .starter-pack p {
-  font-size: 70px;
+  font-size: 4.3vw;
   margin-bottom: 4rem;
 }
 
@@ -18698,7 +18703,7 @@ Main components
 .po-list {
   list-style: none;
   padding: unset;
-  font-size: 16px;
+  font-size: 1vw;
 }
 
 .po-list i {
@@ -18716,7 +18721,7 @@ Main components
   justify-content: flex-end;
   margin: auto;
   border-radius: 20px;
-  margin-bottom: -90px;
+  margin-bottom: -40px;
   width: 60%;
   height: 110px;
   box-shadow: 0 6px 20px 7px rgba(138, 138, 138, 0.27);
@@ -18729,7 +18734,7 @@ Main components
   justify-content: flex-end;
   margin: auto;
   border-radius: 20px;
-  margin-bottom: -90px;
+  margin-bottom: -40px;
   width: 60%;
   height: 110px;
   box-shadow: 0 6px 20px 7px rgba(138, 138, 138, 0.27);
@@ -18761,7 +18766,7 @@ Main components
 
 .option-desc {
   width: 65%;
-  font-size: 16px!important;
+  font-size: 1.1vw!important;
 }
 
 .option-price {
@@ -19958,6 +19963,27 @@ Main components
     display: block;
     padding: 2rem 9rem;
   }
+  #packs-row-resp {
+    flex-direction: column;
+  }
+  #packs-row-resp .col-md-6 {
+    max-width: 100%;
+  }
+  .po-list {
+    font-size: 14px;
+  }
+  .starter-pack p {
+    font-size: 50px;
+  }
+  .option-container {
+    width: 100%;
+  }
+  .more-options-container {
+    width: 100%;
+  }
+  .option-desc {
+    font-size: 13px!important;
+  }
 }
 
 @media (max-width: 910px) {
@@ -20063,6 +20089,9 @@ Main components
   .profile-settings-container {
     width: 95%;
   }
+  .starter-pack, .po-subscribe-b, .po-subscribe-g {
+    width: 95%;
+  }
 }
 
 @media (max-width: 581px) {
@@ -20118,6 +20147,23 @@ Main components
   }
   .account-settings-container {
     padding: 20px;
+  }
+  .po-list {
+    font-size: 13px;
+  }
+  .option-container {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  .option-desc {
+    margin: 1rem 0;
+    text-align: justify;
+    width: 95%;
+  }
+  .option-ls {
+    padding-left: unset;
+    width: unset;
   }
 }
 

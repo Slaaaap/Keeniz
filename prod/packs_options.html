@@ -179,6 +179,8 @@
               </li>
             </ul>
             <div class="tab-content">
+
+              <!--
               <div class="tab-pane active" id="tabPacks">
                 <div class="row">
                   <div class="col-md-12">
@@ -186,9 +188,9 @@
                     <p class="fs-20 text-center p-t-20">Sélectionnez l'offre qui vous correspond ou contactez notre
                       équipe pour plus de renseignements.</p>
                     <div class="po-duration">
-                      <span>Mensuel</span>
+                      <span id="mensuel">Mensuel</span>
                       <a href="#" class="switch off" id="switch"></a>
-                      <span>Annuel</span>
+                      <span id="annuel">Annuel</span>
                     </div>
                   </div>
                 </div>
@@ -238,8 +240,75 @@
                     </div>
                   </div>
                 </div>
-
               </div>
+-->
+
+
+
+
+              <div class="tab-pane active" id="tabPacks">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1 class="semi-bold text-center">Nos offres</h1>
+                    <p class="fs-20 text-center p-t-20">Sélectionnez l'offre qui vous correspond ou contactez notre
+                      équipe pour plus de renseignements.</p>
+                    <div class="po-duration">
+                      <span id="mensuel">Mensuel</span>
+                      <a href="#" class="switch off" id="switch"></a>
+                      <span id="annuel">Annuel</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row p-t-50" id="packs-row-resp">
+                  <div class="col-md-6">
+                    <div class="po-subscribe-b">
+                      <a href="#">Souscrire <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <div class="starter-pack">
+                      <h3 class="m-b-50">Starter</h3>
+                      <p>79€</p>
+                      <div class="sp-hr"></div>
+                      <ul class="po-list">
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="po-subscribe-g">
+                      <a href="#">Souscrire <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <div class="starter-pack">
+                      <h3 class="m-b-50">Pro</h3>
+                      <p>119€</p>
+                      <div class="sp-hr"></div>
+                      <ul class="po-list">
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
               <div class="tab-pane" id="tabOptions">
                 <div class="row">
                   <div class="col-md-10 m-0-a ">
@@ -332,6 +401,8 @@
                   </div>
                 </div>
               </div>
+
+
             </div>
           </div>
           <!-- END PLACE PAGE CONTENT HERE -->
@@ -620,12 +691,27 @@
   <!-- END PAGE LEVEL JS -->
   <script>
     var btnSwitch = document.getElementById('switch');
+    var sideSwitch = true;
 
     btnSwitch.addEventListener('click', function (e) {
       e.preventDefault();
 
       this.classList.toggle('off');
       this.classList.toggle('on');
+
+      if (sideSwitch == true) {
+        document.getElementById('annuel').style.fontWeight = 'bold'
+        document.getElementById('annuel').style.textDecoration = 'underline'
+        document.getElementById('mensuel').style.fontWeight = 'normal'
+        document.getElementById('mensuel').style.textDecoration = 'none'
+        sideSwitch = false;
+      } else {
+        document.getElementById('annuel').style.fontWeight = 'normal'
+        document.getElementById('annuel').style.textDecoration = 'none'
+        document.getElementById('mensuel').style.fontWeight = 'bold'
+        document.getElementById('mensuel').style.textDecoration = 'underline'
+        sideSwitch = true;
+      }
     });
   </script>
 </body>
