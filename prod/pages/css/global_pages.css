@@ -19128,11 +19128,10 @@ Main components
 }
 
 .analyse-overall-container {
-  width: 90%;
+  width: 100%;
   height: auto;
   margin: 2rem auto;
   background-color: #fff;
-  box-shadow: 0 1px 9px 0px rgba(138, 138, 138, 0.27);
   border-radius: 25px;
   padding: 1rem 3rem;
 }
@@ -19169,7 +19168,6 @@ Main components
 
 .analyse-sn-container {
   width: 100%;
-  height: 70px;
   padding: 11px;
   display: flex;
   justify-content: space-between;
@@ -19782,6 +19780,25 @@ Main components
   display: flex;
 }
 
+.modal-message-content .note-editor .note-editable {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 0.3rem;
+}
+
+.note-editor .note-editable p {
+  margin: unset;
+}
+
+.profile-card .note-editor {
+  margin: 1rem 0;
+}
+
+.carousel-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 1500px) {
   .discover-project {
     right: 59.3%;
@@ -19895,6 +19912,15 @@ Main components
   .settings-gallery-container {
     justify-content: center;
   }
+  #analyse-responsive-row {
+    flex-direction: column;
+  }
+  #analyse-responsive-row .col-md-6 {
+    max-width: 100%;
+  }
+  .analyse-rs {
+    border: none;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -19983,6 +20009,18 @@ Main components
   }
   .option-desc {
     font-size: 13px!important;
+  }
+  .inf-action .collapsible-row {
+    flex-direction: column;
+  }
+  .stats-nb, .stats-likes-comments {
+    margin: 1rem 0;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 14px;
+  }
+  .stats-nb {
+    margin-bottom: 2rem;
   }
 }
 
@@ -20092,6 +20130,27 @@ Main components
   .starter-pack, .po-subscribe-b, .po-subscribe-g {
     width: 95%;
   }
+  .inf-action {
+    padding: 0.7rem 1rem 0.7rem 1rem;
+  }
+  .analyse-overall-container {
+    padding: 1rem;
+    width: 95%;
+  }
+  .overall-stats-container p {
+    padding: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 16px!important;
+  }
+
+  .eng-total-ts {
+    font-size: 16px;
+  }
+
+  .eng-total-bs {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 581px) {
@@ -20164,6 +20223,18 @@ Main components
   .option-ls {
     padding-left: unset;
     width: unset;
+  }
+  #no-padding-resp {
+    padding: unset;
+  }
+  .analyse-sn-container {
+    flex-direction: column;
+  }
+  .analyse-sn-rs {
+    width: 100%;
+  }
+  .analyse-rs {
+    padding: 1rem 0;
   }
 }
 

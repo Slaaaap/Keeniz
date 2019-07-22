@@ -210,7 +210,7 @@
                   <button class="btn btn-tag btn-tag-rounded bg-warning-light" id="hidden-participation">Modifier ma
                     participation</button>
                 </div>
-                <div class="modal fade slide-up disable-scroll" id="modalMessage" tabindex="-1" role="dialog"
+                <div class="modal fade slide-up" id="modalMessage" tabindex="-1" role="dialog"
                   aria-labelledby="modalSlideUpLabel" aria-hidden="false">
                   <div class="modal-dialog ">
                     <div class="modal-content-wrapper">
@@ -229,7 +229,7 @@
                           <div class="modal-message-content">
                             <span class="bold m-t-10 m-b-10 fs-16">1- Choisissez votre contrepartie</span>
                             <div class="inf-actions-container">
-                              <div class="inf-action" >
+                              <div class="inf-action">
                                 <div class="inf-action-ls">
                                   <h3 class="semi-bold">Pour 100€</h3>
                                   <p>Je peux réaliser une photo et la publier sur l'un de mes réseaux sociaux. Toutes
@@ -627,9 +627,10 @@
       $('#summernote').summernote({
         toolbar: [
           // [groupName, [list of button]]
-          ['fontname', ['fontname']],
-          ['fontsize', ['fontsize']],
-          ['style', ['bold', 'italic', 'underline', 'clear']]
+          ['style', ['bold', 'italic', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['insert', ['link', 'hr']]
         ]
       });
     });
