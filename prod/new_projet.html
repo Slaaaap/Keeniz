@@ -170,29 +170,26 @@
         <div class=" container-fluid   container-fixed-lg">
           <!-- BEGIN PlACE PAGE CONTENT HERE -->
           <div class="row">
-            <div class="col-md-4 full-height" id="myScrollspy">
-              <div class="scrollspy-container">
-                <div class="scrollspy-center">
-                  <div class="scrollspy-list-container">
-                    <ul class="scrollspy-list">
-                      <li>Description</li>
-                      <li>&nbsp;</li>
-                      <li>Illustration <br />Validation</li>
-                    </ul>
-                  </div>
-                  <div class="scrollspy-progress-bar">
-                    <div class="scrollspy-dots-list">
-                      <div class="progress-container">
-                        <div class="progress-bar" id="myBar"></div>
+            <div class="col-md-4" id="myScrollspy">
+                    <div class="scrollspy-container">
+                      <div class="scrollspy-list-container">
+                        <div class="scrollspy-list-row-project">
+                          <span>Description</span>
+                          <div class="scrollspy-dot" id="dot1"></div>
+                        </div>
+                        <div class="scrollspy-list-row">
+                          <span>Validation</span>
+                          <div class="scrollspy-dot" id="dot3"></div>
+                        </div>
                       </div>
-                      <div class="scrollspy-dot" id="dot1"></div>
-                      <div class="scrollspy-dot" id="dot3"></div>
+                      <div class="scrollspy-progress-bar-p">
+                        <div class="progress-container-p">
+                          <div class="progress-bar-p" id="myBar-p"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-8">
+            <div class="col-md-8" id="expand-newp-col">
               <div class="nc-form-container">
                 <p class="fs-16 m-b-20">Attirez les vers vous en leur proposant un projet créatif et original.
                 </p>
@@ -588,7 +585,7 @@
       var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       var scrolled = (winScroll / height) * 100;
-      document.getElementById("myBar").style.height = scrolled + "%";
+      document.getElementById("myBar-p").style.height = scrolled + "%";
       //var scrollValue = document.getElementById("myBar").style.height
       if (scrolled >= 95) {
         document.getElementById("dot3").style.backgroundColor = "#053cc8";
