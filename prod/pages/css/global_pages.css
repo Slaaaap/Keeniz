@@ -2780,7 +2780,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 44px;
+  font-size: 2vw;
   line-height: 55px;
   letter-spacing: -0.08px;
 }
@@ -3516,7 +3516,7 @@ hr.dotted {
     line-height: 20px;
   }
   h1 {
-    font-size: 33px;
+    font-size: 33px!important;
     line-height: 44px;
     letter-spacing: -0.08px;
   }
@@ -3529,11 +3529,11 @@ hr.dotted {
     line-height: 35.88px;
   }
   h4 {
-    font-size: 18px;
+    font-size: 18px!important;
     line-height: 33.88px;
   }
   h5 {
-    font-size: 16px;
+    font-size: 16px!important;
     line-height: 25.88px;
   }
   small, .small {
@@ -3557,12 +3557,12 @@ hr.dotted {
 }
 
 .windows h4 {
-  font-size: 23px;
+  font-size: 1.5vw;
   line-height: 32px;
 }
 
 .windows h5 {
-  font-size: 19px;
+  font-size: 1.2vw;
   line-height: 28px;
   font-weight: normal;
 }
@@ -8270,7 +8270,7 @@ body.rtl .checkbox label::after {
 */
 
 .form-group {
-  margin-bottom: 10px;
+  margin-top: 8px;
 }
 
 .form-group label:not(.error) {
@@ -10106,7 +10106,8 @@ div.cs-skin-slide .cs-options ul li span:hover, div.cs-skin-slide .cs-options ul
 
 .table {
   margin-bottom: 0;
-  margin-top: 5px;
+  /* margin-top: 5px; */
+  /* border-bottom: 7px solid lightgray; */
 }
 
 .table thead tr th {
@@ -17038,6 +17039,7 @@ Main components
 .pagination {
   float: right;
   margin-top: 1em;
+  padding-right: 2rem;
 }
 
 .rounded-l-corner {
@@ -17373,12 +17375,12 @@ Main components
 }
 
 .profile-stats-left-graph {
-  width: 80%;
+  width: 100%;
   margin: 0 0 1rem 0;
 }
 
 .profile-stats-right-graph {
-  width: 80%;
+  width: 100%;
   margin: 1rem 0 1rem 0;
 }
 
@@ -17749,7 +17751,7 @@ Main components
 .result-card .fa-bookmark {
   position: absolute;
   color: #fff;
-  margin: 10px 0px 0px 84%;
+  margin: 10px 0px 0px 80%;
   font-size: 20px;
 }
 
@@ -18512,6 +18514,7 @@ Main components
   width: 100%;
   border-radius: 25px;
   height: auto;
+  padding: 0 0 2rem 0;
 }
 
 .campagne-title .modal-dialog, .campagne-title-inf .modal-dialog {
@@ -18546,6 +18549,16 @@ Main components
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+#agencies-img .cpc-top-part img {
+  max-width: 100%;
+  height: 190px;
+  width: 100%;
+  object-fit: contain;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 1.4rem;
 }
 
 .cpc-intreractions {
@@ -18604,7 +18617,7 @@ Main components
 }
 
 .cpc-prop {
-  padding: 8px 4%!important;
+  padding: 8px 13px;
 }
 
 .cpc-prop:hover {
@@ -19551,7 +19564,7 @@ Main components
 }
 
 .top3-card {
-  width: 66%;
+  width: 100%;
   margin: auto;
   height: auto;
 }
@@ -19573,22 +19586,22 @@ Main components
 }
 
 .stats-compte {
-  width: 90%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #fff;
   box-shadow: 0 1px 9px 0px rgba(138, 138, 138, 0.27);
-  padding: 2rem;
+  padding: 2rem 1rem;
   border-radius: 5px;
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 0 auto;
 }
 
 .single-stat {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 5rem;
+  margin: 0 3rem;
 }
 
 .single-stat span {
@@ -19650,7 +19663,7 @@ Main components
 }
 
 .brand-logo img {
-  max-width: 70%;
+  max-width: 50%;
   border-radius: 100%;
 }
 
@@ -19861,6 +19874,11 @@ Main components
 #flex-center {
   justify-content: center;
   display: flex;
+}
+
+#table-keeniz {
+  padding: unset;
+  border-radius: 25px;
 }
 
 @media (max-width: 1500px) {

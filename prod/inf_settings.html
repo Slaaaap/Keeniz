@@ -806,8 +806,24 @@
   <!-- END PAGE LEVEL JS -->
   <script>
     $(document).ready(function () {
-      $('#summernote').summernote();
-      $('#summernote2').summernote();
+      $('#summernote').summernote({
+          toolbar: [
+            // [groupName, [list of button]]
+            ['style', ['bold', 'italic', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['insert', ['link', 'hr']]
+          ]
+        });
+      $('#summernote2').summernote({
+          toolbar: [
+            // [groupName, [list of button]]
+            ['style', ['bold', 'italic', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['insert', ['link', 'hr']]
+          ]
+        });
     });
   </script>
 </body>
