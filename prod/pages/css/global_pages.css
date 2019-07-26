@@ -7856,7 +7856,7 @@ form legend {
   cursor: pointer;
   position: relative;
   padding-left: 25px;
-  margin-right: 15px;
+  margin-right: 10px;
   min-width: 17px;
   min-height: 17px;
   font-size: 13px;
@@ -7970,8 +7970,8 @@ form legend {
 
 .checkbox input[type="checkbox"] {
   opacity: 0;
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
 }
 
 .checkbox.checkbox-circle label:after {
@@ -19407,8 +19407,8 @@ Main components
 }
 
 .custom-radio.radio label, .custom-radio.checkbox label {
-  line-height: 35px;
-  padding-left: 45px;
+  line-height: 40px;
+  padding-left: 40px;
 }
 
 .nc-form-container .note-editable {
@@ -19454,6 +19454,7 @@ Main components
   object-fit: cover;
   margin: 0 0.5rem;
 }
+
 
 .photo-separator {
   display: flex;
@@ -20398,6 +20399,20 @@ Main components
     width: 6px;
     height: 50px;
     margin: 0.5rem;
+}
+  #row-photo{
+    display:none;
+  }
+  .custom-radio.radio label:before, .custom-radio.checkbox label:before {
+    width: 30px;
+    height: 30px;
+  }
+  .custom-radio.radio label, .custom-radio.checkbox label {
+    line-height: 30px;
+    padding-left: 30px;
+  }
+  .custom-radio.checkbox input[type="checkbox"]:checked+label:before {
+    border-width: 15px;
 }
 }
 
