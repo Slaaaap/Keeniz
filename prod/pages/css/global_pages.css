@@ -18264,14 +18264,14 @@ Main components
   background-color: #fff;
   border-radius: 25px;
   margin-top: -250px;
-  margin-left: 70%;
+  margin-left: 66%;
   box-shadow: 0 6px 20px 7px rgba(138, 138, 138, 0.27);
   padding: 20px;
 }
 
 .campagne-info-container img {
-  max-width: 40%;
-  height: 140px;
+  max-width: 100%;
+  height: 114px;
 }
 
 .campagne-first-row {
@@ -18411,19 +18411,19 @@ Main components
   text-align: justify;
 }
 
-.campagne-title {
+.campagne-title, .campagne-title-inf {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 20px 0 0 0;
 }
 
-.campagne-title button {
+.campagne-title button, .campagne-title-inf button {
   max-height: 50px;
   padding: 15px 19px;
 }
 
-.campagne-title button:hover {
+.campagne-title button:hover, .campagne-title-inf button:hover {
   /*background-color: #ddb83f!important;*/
   border-color: #fff;
 }
@@ -18463,6 +18463,7 @@ Main components
   height: 250px;
   object-fit: cover;
   margin: auto;
+  width: 100%;
 }
 
 #no-margin {
@@ -18488,6 +18489,7 @@ Main components
 #classic-hover {
   border-color: #052f99;
   color: #fff!important;
+  height: 100%;
 }
 
 .campagne-liste-container {
@@ -18497,7 +18499,7 @@ Main components
   height: 92%;
 }
 
-.campagne-title .modal-dialog {
+.campagne-title .modal-dialog, .campagne-title-inf .modal-dialog {
   max-width: 90%;
   width: 100%;
 }
@@ -18506,10 +18508,15 @@ Main components
   display: flex;
   flex-direction: column;
   width: 75%;
-  height: 335px;
+  height: auto;
   background-color: #fff;
-  box-shadow: 0 6px 20px 7px rgba(138, 138, 138, 0.27);
   border-radius: 20px;
+  padding-bottom: 1rem;
+}
+
+.campagne-buttons-container .modal-dialog {
+  width: 100%;
+  max-width: 90%;
 }
 
 .participant-slot {
@@ -18531,25 +18538,26 @@ Main components
   justify-content: space-between;
   padding: 0 10px;
   width: 100%;
+  margin: 1rem 0;
 }
 
 .cpc-status-ok {
   color: green;
-  font-size: 22px;
+  font-size: 1.2vw;
 }
 
 .cpc-status-ko {
   color: red;
-  font-size: 22px;
+  font-size: 1.2vw;
 }
 
 .cpc-status-waiting {
   color: #004FC5;
-  font-size: 22px;
+  font-size: 1.2vw;
 }
 
 .cpc-icons {
-  font-size: 25px;
+  font-size: 1.5vw;
 }
 
 .cpc-icons i {
@@ -18562,15 +18570,16 @@ Main components
 }
 
 .cpc-bot-part span {
-  font-size: 18px;
+  font-size: 1.7vw;
   font-weight: bold;
   padding: 0px 10px;
+  margin: 0.5rem;
 }
 
 .cpc-bot-part {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   height: 100%;
   justify-content: space-around;
 }
@@ -18580,7 +18589,7 @@ Main components
 }
 
 .cpc-prop {
-  padding: 8px 53px!important;
+  padding: 8px 4%!important;
 }
 
 .cpc-prop:hover {
@@ -18847,35 +18856,48 @@ Main components
   margin: 5rem auto;
   display: flex;
   position: fixed;
+  padding: 20px;
 }
 
-.scrollspy-center {
-  display: flex;
-  width: 100%;
+@media (max-width: 990px) {
+  .scrollspy-container {
+    display: none;
+  }
 }
 
 .scrollspy-list-container {
-  width: 50%;
+  width: 100%;
+  z-index: 1;
 }
 
-.scrollspy-list {
-  list-style-type: none;
+.scrollspy-list-row {
+  position: relative;
+  height: 33%;
+  margin: 5px;
+  align-items: center;
+  display: flex;
 }
 
-.scrollspy-dots-list {
-  list-style-type: none;
-}
-
-.scrollspy-list li {
-  margin: 6rem auto;
-  text-align: center;
+.scrollspy-list-row-project {
+  position: relative;
+  height: 50%;
+  margin: 5px;
+  align-items: center;
+  display: flex;
 }
 
 .scrollspy-progress-bar {
-  width: 10vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  right: 73px;
+  top: 20%;
+  z-index: 0;
+}
+
+.scrollspy-progress-bar-p {
+  position: absolute;
+  right: 73px;
+  top: 25%;
+  z-index: 0;
 }
 
 .scrollspy-dot {
@@ -18883,38 +18905,44 @@ Main components
   height: 30px;
   border-radius: 50%;
   background-color: #ccc;
-  margin: 0;
   position: absolute;
+  right: 35px;
 }
 
 .scrollspy-dot#dot1 {
-  top: 13vh;
-  right: 3.9vw;
   background: #004FC5;
 }
 
 .scrollspy-dot#dot2 {
-  top: 28vh;
-  right: 3.9vw;
   transition: all 0.15s ease;
   background: #ccc;
 }
 
 .scrollspy-dot#dot3 {
-  bottom: 12vh;
-  right: 3.9vw;
   transition: all 0.15s ease;
   background: #ccc;
 }
 
 .progress-container {
   width: 4px;
-  height: 250px;
+  height: 275px;
   background: #ccc;
-  margin: 20px 50px;
+}
+
+.progress-container-p {
+  width: 4px;
+  height: 200px;
+  background: #ccc;
 }
 
 .progress-bar {
+  height: 0%;
+  background: #004FC5;
+  width: 4px;
+  transition: none;
+}
+
+.progress-bar-p {
   height: 0%;
   background: #004FC5;
   width: 4px;
@@ -19331,6 +19359,7 @@ Main components
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .custom-radio.checkbox input[type="checkbox"]:checked+label:before {
@@ -19799,6 +19828,25 @@ Main components
   object-fit: cover;
 }
 
+.campagne-buttons-container {
+  display: flex;
+  justify-content: center;
+  padding: 18rem 0 0 3rem;
+}
+
+.btn-col-8, .hide-participants {
+  display: none;
+}
+
+.custom-row-width {
+  width: 80%;
+}
+
+#flex-center {
+  justify-content: center;
+  display: flex;
+}
+
 @media (max-width: 1500px) {
   .discover-project {
     right: 59.3%;
@@ -19869,6 +19917,35 @@ Main components
   }
   .result-card-inf .fa-bookmark {
     padding: 1rem 25%;
+  }
+  .campagne-info-container {
+    width: 90%;
+    margin-top: -240px;
+    margin-left: 6%;
+  }
+  .campagne-title {
+    padding-top: 7rem;
+  }
+  .campagne-buttons-container {
+    padding: 9rem 0 0 0;
+  }
+  .btn-col-8, .hide-participants {
+    display: block;
+  }
+  .btn-col-4, .show-participants {
+    display: none;
+  }
+  .camp-resp-row {
+    max-width: 100%;
+    flex: 100%;
+    padding: 0 2rem!important;
+  }
+  #hide-col-4 {
+    display: none;
+  }
+  #expand-col-4 {
+    max-width: 100%;
+    flex: 100%;
   }
 }
 
@@ -20022,6 +20099,26 @@ Main components
   .stats-nb {
     margin-bottom: 2rem;
   }
+  .campagne-info-container {
+    margin-top: -410px;
+  }
+  .campagne-title {
+    padding-top: 5rem;
+  }
+  #half-width-modal {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #expand-newc-col, #expand-newp-col {
+    max-width: 100%;
+    flex: 100%;
+  }
+  #myScrollspy {
+    display: none;
+  }
+  .nc-form-container {
+    padding: 3rem 1rem;
+  }
 }
 
 @media (max-width: 910px) {
@@ -20143,13 +20240,30 @@ Main components
     text-align: center;
     font-size: 16px!important;
   }
-
   .eng-total-ts {
     font-size: 16px;
   }
-
   .eng-total-bs {
     font-size: 14px;
+  }
+  .campagne-participant-card {
+    margin: 2rem 0;
+  }
+  .cpc-status-ok, .cpc-status-ko, .cpc-status-waiting {
+    font-size: 13px;
+  }
+  .cpc-icons {
+    font-size: 20px;
+  }
+  .cpc-bot-part span {
+    font-size: 20px;
+  }
+  .campagne-title-inf {
+    display: flex;
+    flex-direction: column;
+  }
+  #expand-col-4 {
+    padding-left: 1rem!important;
   }
 }
 
@@ -20235,6 +20349,39 @@ Main components
   }
   .analyse-rs {
     padding: 1rem 0;
+  }
+  .campagne-title {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-col-8 {
+    margin: 1rem auto;
+  }
+  .nc-photo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .upload-photos {
+    margin: auto;
+  }
+  .nc-photo-container .more-photos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .separator-line {
+    width: 6px;
+    height: 50px;
+    margin: 0.5rem;
+}
+}
+
+@media (max-width: 430px) {
+  .campagne-title, .campagne-title-inf {
+    padding-top: 10.5rem;
+  }
+  .campagne-title-inf {
+    padding-top: 4.5rem;
   }
 }
 

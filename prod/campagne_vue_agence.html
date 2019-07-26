@@ -172,11 +172,19 @@
         </div>
         <div class="campagne-info-container">
           <div class="campagne-first-row">
-            <img src="./assets/img/profiles/jonadoe.jpg" alt="logo" id="avatar-campagne" />
-            <div class="campagne-profile">
-              <h4 class="bold">jona_doe</h4>
-              <button class="btn btn-tag btn-tag-rounded bg-warning-light " id="discover-p">Voir le profil</button>
+            <div class="row custom-row-width">
+              <div class="col-md-6" id="flex-center">
+                  <img src="./assets/img/profiles/bd2x.jpg" alt="logo" id="avatar-campagne" />
+              </div>
+              <div class="col-md-6">
+                  <div class="campagne-profile">
+                      <h4 class="bold">jona_doe</h4>
+                      <button class="btn btn-tag btn-tag-rounded bg-warning-light " id="discover-p">Voir le profil</button>
+                    </div>
+              </div>
             </div>
+           
+            
           </div>
           <div class="social-networks-row">
             <div class="single-sn">
@@ -200,16 +208,11 @@
         <div class="container-fluid container-fixed-lg">
           <!-- BEGIN PlACE PAGE CONTENT HERE -->
           <div class="row">
-            <div class="col-md-8 p-l-50">
+            <div class="col-md-8 p-l-50 camp-resp-row">
               <div class="campagne-title">
                 <h1 class="bold">C'est mon marathon</h1>
-                <div class="campagne-buttons-container">
-                  <button class="btn btn-tag btn-tag-rounded bg-keeniz white" id="active-participation"
-                    data-toggle="modal" data-target="#modalMessage">Je
-                    participe</button>
-                  <button class="btn btn-tag btn-tag-rounded bg-warning-light" id="hidden-participation">Modifier ma
-                    participation</button>
-                </div>
+                <button class="btn btn-tag btn-tag-rounded bg-keeniz white btn-col-8" id="active-participation"
+                  data-toggle="modal" data-target="#modalMessage">Je participe</button>
                 <div class="modal fade slide-up" id="modalMessage" tabindex="-1" role="dialog"
                   aria-labelledby="modalSlideUpLabel" aria-hidden="false">
                   <div class="modal-dialog ">
@@ -334,7 +337,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <div class="campagne-buttons-container">
+                <button class="btn btn-tag btn-tag-rounded bg-keeniz white btn-col-4" id="active-participation"
+                  data-toggle="modal" data-target="#modalMessage">Je participe</button>
+                <button class="btn btn-tag btn-tag-rounded bg-warning-light" id="hidden-participation">Modifier ma
+                  participation</button>
+              </div>
+
+            </div>
           </div>
 
           <!-- END PLACE PAGE CONTENT HERE -->
