@@ -174,17 +174,17 @@
           <div class="campagne-first-row">
             <div class="row custom-row-width">
               <div class="col-md-6" id="flex-center">
-                  <img src="./assets/img/profiles/bd2x.jpg" alt="logo" id="avatar-campagne" />
+                <img src="./assets/img/profiles/bd2x.jpg" alt="logo" id="avatar-campagne" />
               </div>
               <div class="col-md-6">
-                  <div class="campagne-profile">
-                      <h4 class="bold">jona_doe</h4>
-                      <button class="btn btn-tag btn-tag-rounded bg-warning-light " id="discover-p">Voir le profil</button>
-                    </div>
+                <div class="campagne-profile">
+                  <h4 class="bold">jona_doe</h4>
+                  <button class="btn btn-tag btn-tag-rounded bg-warning-light " id="discover-p">Voir le profil</button>
+                </div>
               </div>
             </div>
-           
-            
+
+
           </div>
           <div class="social-networks-row">
             <div class="single-sn">
@@ -212,68 +212,193 @@
               <div class="campagne-title">
                 <h1 class="bold">C'est mon marathon</h1>
                 <button class="btn btn-tag btn-tag-rounded bg-keeniz white btn-col-8" id="active-participation"
-                  data-toggle="modal" data-target="#modalMessage">Selection</button>
-                <div class="modal fade slide-up" id="modalMessage" tabindex="-1" role="dialog"
-                  aria-labelledby="modalSlideUpLabel" aria-hidden="false">
+                  data-toggle="modal" data-target="#modal-participants">Sélection</button>
+                <div class="modal fade fill-in" id="modal-participants" tabindex="-1" role="dialog"
+                  aria-labelledby="modalFillInLabel" aria-hidden="true">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="pg-close"></i>
+                  </button>
                   <div class="modal-dialog ">
-                    <div class="modal-content-wrapper">
-                      <div class="modal-content modal-message-body" id="half-width-modal">
-                        <div class="modal-header clearfix text-left modal-message-header">
-                          <button type="button" class="close modal-message-close" data-dismiss="modal"
-                            aria-hidden="true">
-                            <i class="pg-close fs-14"></i>
-                          </button>
-                          <h5 class="bold white p-b-20">Participez au projet :
-                            <br />
-                            <span class="semi-bold">C'est mon marathon</span>
-                          </h5>
-                        </div>
-                        <div class="modal-body modal-message-body">
-                          <div class="modal-message-content">
-                            <span class="bold m-t-10 m-b-10 fs-16">1- Choisissez votre contrepartie</span>
-                            <div class="inf-actions-container">
-                              <div class="inf-action">
-                                <div class="inf-action-ls">
-                                  <h3 class="semi-bold">Pour 100€</h3>
-                                  <p>Je peux réaliser une photo et la publier sur l'un de mes réseaux sociaux. Toutes
-                                    mes
-                                    photos sont retouchées afin d'obtenir un meilleur rendu.</p>
-                                </div>
-                                <div class="checkbox check-primary checkbox-circle inf-action-rs">
-                                  <input type="checkbox" value="1" id="checkbox8">
-                                  <label for="checkbox8"> </label>
-                                </div>
+                    <div class="modal-content">
+                      <div class="campagne-liste-container">
+                        <h2 class="semi-bold text-center p-t-20 m-b-40">Liste des participants</h2>
+                        <div class="row">
+                          <div class="col-md-3 participant-slot">
+                            <div class="campagne-participant-card shadow-keeniz">
+                              <div class="cpc-top-part">
+                                <img src="./assets/img/adidas.jpg" alt="participant avatar" />
                               </div>
-                              <div class="inf-action">
-                                <div class="inf-action-ls">
-                                  <h3 class="semi-bold">Pour 250€</h3>
-                                  <p>Je peux réaliser une vidéo et la publier sur l'un de mes réseaux sociaux. Toutes
-                                    mes
-                                    vidéos sont retouchées afin d'obtenir un meilleur rendu.</p>
+                              <div class="cpc-bot-part">
+                                <span>Adidas</span>
+                                <div class="cpc-intreractions">
+                                  <div class="cpc-icons">
+                                    <i class="far fa-comment"></i>
+                                    <i class="far fa-user-circle"></i>
+                                  </div>
+                                  <div class="cpc-status-ok">
+                                    <i class="fas fa-check p-r-5"></i>Accepté
+                                  </div>
                                 </div>
-                                <div class="checkbox check-primary checkbox-circle inf-action-rs">
-                                  <input type="checkbox" value="1" id="checkbox9">
-                                  <label for="checkbox9"> </label>
-                                </div>
+                                <a href="#" class="btn btn-tag btn-tag-rounded bg-keeniz white m-0-a cpc-prop">Voir la
+                                  proposition</a>
                               </div>
                             </div>
-                            <br />
-                            <br />
-                            <span class="bold m-t-10 m-b-10 fs-16">2- Décrivez en détail ce que vous souhaitez proposer
-                              à l'influenceur (produit, service, application mobile...)</span>
-                            <div class="fix-summernote" id="summernote"></div>
                           </div>
-                          <p>Keeniz offre la possiblité aux influenceurs de présenter leurs projets aux annonceurs.</p>
-                          <p class="p-b-20">Keeniz ne garantit pas les résultats des projets. L'influenceur est
-                            responsable de toutes les déclarations faites concernant le projet qu'il propose.</p>
-                          <div class="modal-message-btn-agency">
-                            <button class="btn btn-rounded blue p-r-50 p-l-50">Valider</button>
+                          <div class="col-md-3 participant-slot">
+                            <div class="campagne-participant-card shadow-keeniz">
+                              <div class="cpc-top-part">
+                                <img src="./assets/img/profiles/tomdidy.jpg" alt="participant avatar" />
+                              </div>
+                              <div class="cpc-bot-part">
+                                <span>@paris_mylove</span>
+                                <div class="cpc-intreractions">
+                                  <div class="cpc-icons">
+                                    <i class="far fa-comment"></i>
+                                    <i class="far fa-user-circle"></i>
+                                  </div>
+                                  <div class="cpc-status-ko">
+                                    <i class="fas fa-times p-r-5"></i>Refusé
+                                  </div>
+                                </div>
+                                <a href="#" class="btn btn-tag btn-tag-rounded bg-keeniz white m-0-a cpc-prop">Voir la
+                                  proposition</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 participant-slot">
+                            <div class="campagne-participant-card shadow-keeniz">
+                              <div class="cpc-top-part">
+                                <img src="./assets/img/profiles/marymary.jpg" alt="participant avatar" />
+                              </div>
+                              <div class="cpc-bot-part">
+                                <span>@Elle_run</span>
+                                <div class="cpc-intreractions">
+                                  <div class="cpc-icons">
+                                    <i class="far fa-comment"></i>
+                                    <i class="far fa-user-circle"></i>
+                                  </div>
+                                  <div class="cpc-status-waiting">
+                                    <i class="fas fa-hourglass-half p-r-5"></i>En cours
+                                  </div>
+                                </div>
+                                <a href="#" class="btn btn-tag btn-tag-rounded bg-keeniz white m-0-a cpc-prop">Voir la
+                                  proposition</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 participant-slot">
+                            <div class="campagne-participant-card shadow-keeniz">
+                              <div class="cpc-top-part">
+                                <img src="./assets/img/profiles/paulalo.jpg" alt="participant avatar" />
+                              </div>
+                              <div class="cpc-bot-part">
+                                <span>@Lisa_travel</span>
+                                <div class="cpc-intreractions">
+                                  <div class="cpc-icons">
+                                    <i class="far fa-comment"></i>
+                                    <i class="far fa-user-circle"></i>
+                                  </div>
+                                  <div class="cpc-status-waiting">
+                                    <i class="fas fa-hourglass-half p-r-5"></i>En cours
+                                  </div>
+                                </div>
+                                <a href="#" class="btn btn-tag btn-tag-rounded bg-keeniz white m-0-a cpc-prop">Voir la
+                                  proposition</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row p-t-50 p-b-20">
+                          <div class="col-md-3 participant-slot">
+                            <div class="campagne-participant-card shadow-keeniz">
+                              <div class="cpc-top-part">
+                                <img src="./assets/img/profiles/jonadoe-square.jpg" alt="participant avatar" />
+                              </div>
+                              <div class="cpc-bot-part">
+                                <span>@jona_doe</span>
+                                <div class="cpc-intreractions">
+                                  <div class="cpc-icons">
+                                    <i class="far fa-comment"></i>
+                                    <i class="far fa-user-circle"></i>
+                                  </div>
+                                  <div class="cpc-status-ok">
+                                    <i class="fas fa-check p-r-5"></i>Accepté
+                                  </div>
+                                </div>
+                                <a href="#" class="btn btn-tag btn-tag-rounded bg-keeniz white m-0-a cpc-prop">Voir la
+                                  proposition</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 participant-slot">
+                            <div class="campagne-participant-card shadow-keeniz">
+                              <div class="cpc-top-part">
+                                <img src="./assets/img/profiles/tomdidy.jpg" alt="participant avatar" />
+                              </div>
+                              <div class="cpc-bot-part">
+                                <span>@paris_mylove</span>
+                                <div class="cpc-intreractions">
+                                  <div class="cpc-icons">
+                                    <i class="far fa-comment"></i>
+                                    <i class="far fa-user-circle"></i>
+                                  </div>
+                                  <div class="cpc-status-ko">
+                                    <i class="fas fa-times p-r-5"></i>Refusé
+                                  </div>
+                                </div>
+                                <a href="#" class="btn btn-tag btn-tag-rounded bg-keeniz white m-0-a cpc-prop">Voir la
+                                  proposition</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 participant-slot">
+                            <div class="campagne-participant-card shadow-keeniz">
+                              <div class="cpc-top-part">
+                                <img src="./assets/img/profiles/marymary.jpg" alt="participant avatar" />
+                              </div>
+                              <div class="cpc-bot-part">
+                                <span>@Elle_run</span>
+                                <div class="cpc-intreractions">
+                                  <div class="cpc-icons">
+                                    <i class="far fa-comment"></i>
+                                    <i class="far fa-user-circle"></i>
+                                  </div>
+                                  <div class="cpc-status-waiting">
+                                    <i class="fas fa-hourglass-half p-r-5"></i>En cours
+                                  </div>
+                                </div>
+                                <a href="#" class="btn btn-tag btn-tag-rounded bg-keeniz white m-0-a cpc-prop">Voir la
+                                  proposition</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 participant-slot">
+                            <div class="campagne-participant-card shadow-keeniz">
+                              <div class="cpc-top-part">
+                                <img src="./assets/img/profiles/paulalo.jpg" alt="participant avatar" />
+                              </div>
+                              <div class="cpc-bot-part">
+                                <span>@Lisa_travel</span>
+                                <div class="cpc-intreractions">
+                                  <div class="cpc-icons">
+                                    <i class="far fa-comment"></i>
+                                    <i class="far fa-user-circle"></i>
+                                  </div>
+                                  <div class="cpc-status-waiting">
+                                    <i class="fas fa-hourglass-half p-r-5"></i>En cours
+                                  </div>
+                                </div>
+                                <a href="#" class="btn btn-tag btn-tag-rounded bg-keeniz white m-0-a cpc-prop">Voir la
+                                  proposition</a>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <!-- /.modal-content -->
                   </div>
+                  <!-- /.modal-dialog -->
                 </div>
               </div>
               <h4 class="m-b-50">Expire le 15/06/2019</h4>
@@ -340,7 +465,7 @@
             <div class="col-md-4">
               <div class="campagne-buttons-container">
                 <button class="btn btn-tag btn-tag-rounded bg-keeniz white btn-col-4" id="active-participation"
-                  data-toggle="modal" data-target="#modalMessage">Selection</button>
+                  data-toggle="modal" data-target="#modal-participants">Selection</button>
                 <button class="btn btn-tag btn-tag-rounded bg-warning-light" id="hidden-participation">Modifier ma
                   participation</button>
               </div>
