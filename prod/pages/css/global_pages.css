@@ -18258,13 +18258,13 @@ Main components
 }
 
 .campagne-info-container {
-  position: absolute;
+  position: fixed;
   width: 400px;
   height: auto;
   background-color: #fff;
   border-radius: 25px;
-  margin-top: -250px;
-  margin-left: 66%;
+  margin-top: -385px;
+  margin-left: 64%;
   box-shadow: 0 6px 20px 7px rgba(138, 138, 138, 0.27);
   padding: 20px;
 }
@@ -18480,6 +18480,18 @@ Main components
 
 #active-participation {
   padding: 15px 70px;
+  position: fixed;
+  margin: 5rem auto;
+}
+
+#active-participation-m:hover {
+  background-color: #052f99!important;
+}
+
+#active-participation-m {
+  padding: 15px 70px;
+  position: fixed;
+  margin: 0rem auto;
 }
 
 #classic-hover:hover {
@@ -18489,14 +18501,17 @@ Main components
 #classic-hover {
   border-color: #052f99;
   color: #fff!important;
-  height: 100%;
+  /* height: 100%; */
+  position: fixed;
+  margin-left: -4rem;
+  padding: 15px 1rem;
 }
 
 .campagne-liste-container {
   background-color: #fff;
   width: 100%;
   border-radius: 25px;
-  height: 92%;
+  height: auto;
 }
 
 .campagne-title .modal-dialog, .campagne-title-inf .modal-dialog {
@@ -18570,7 +18585,7 @@ Main components
 }
 
 .cpc-bot-part span {
-  font-size: 1.7vw;
+  font-size: 1.4vw;
   font-weight: bold;
   padding: 0px 10px;
   margin: 0.5rem;
@@ -19831,7 +19846,7 @@ Main components
 .campagne-buttons-container {
   display: flex;
   justify-content: center;
-  padding: 18rem 0 0 3rem;
+  padding: 4rem 9rem 0 0rem;
 }
 
 .btn-col-8, .hide-participants {
@@ -19922,6 +19937,7 @@ Main components
     width: 90%;
     margin-top: -240px;
     margin-left: 6%;
+    position: absolute;
   }
   .campagne-title {
     padding-top: 7rem;
@@ -19931,6 +19947,8 @@ Main components
   }
   .btn-col-8, .hide-participants {
     display: block;
+    margin: auto;
+    position: relative;
   }
   .btn-col-4, .show-participants {
     display: none;
@@ -19946,6 +19964,12 @@ Main components
   #expand-col-4 {
     max-width: 100%;
     flex: 100%;
+  }
+  #active-participation, #active-participation-m, #classic-hover {
+    position: relative;
+  }
+  #classic-hover {
+    margin-left: -18rem;
   }
 }
 
@@ -20101,6 +20125,7 @@ Main components
   }
   .campagne-info-container {
     margin-top: -410px;
+    position: absolute;
   }
   .campagne-title {
     padding-top: 5rem;
