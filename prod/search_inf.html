@@ -172,39 +172,40 @@
           <div class="search-inf-filters-resp fixed-top-filters">
             <div class="row">
               <div class="col-md-2">
-                <div class="form-group form-group-default">
-                  <label>Nom</label>
-                  <input type="text" class="form-control" />
-                </div>
-              </div>
-              <div class="col-md-2">
                 <div class="cs-select cs-skin-slide" tabindex="0">
                   <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                    <option disabled>Plateforme</option>
-                    <option>Toutes</option>
-                    <option>YouTube</option>
-                    <option>Instagram</option>
-                    <option>Snapchat</option>
+                    <option disabled>Genre</option>
+                    <option>Tous</option>
+                    <option>Homme</option>
+                    <option>Femme</option>
                   </select>
                 </div>
               </div>
               <div class="col-md-2">
                 <div class="cs-select cs-skin-slide" tabindex="0">
                   <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                    <option disabled>Genre</option>
-                    <option>Tous</option>
-                    <option>Masculin</option>
-                    <option>Féminin</option>
+                    <option disabled>Pays</option>
+                    <option>France</option>
+                    <option>Italie</option>
+                    <option>Espagne</option>
                   </select>
                 </div>
               </div>
               <div class="col-md-2">
                 <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                  <option disabled>Domaine</option>
-                  <option>Tous</option>
-                  <option>Lifestyle</option>
-                  <option>Mode</option>
-                  <option>Sport</option>
+                  <option disabled>Ville(s)</option>
+                  <option>Paris</option>
+                  <option>Strasbourg</option>
+                  <option>Madris</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
+                  <option disabled>Réseaux sociaux</option>
+                  <option>Instagram</option>
+                  <option>Facebook</option>
+                  <option>Youtube</option>
+                  <option>Blog</option>
                 </select>
               </div>
               <div class="col-md-2">
@@ -218,15 +219,32 @@
                 </select>
               </div>
               <div class="col-md-2">
-                <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                  <option disabled>Localisation</option>
-                  <option>Toutes</option>
-                  <option>Paris</option>
-                  <option>Rome</option>
-                  <option>Londres</option>
-                  <option>Madrid</option>
-                </select>
-              </div>
+              <form role="form">
+                <div class="form-group form-group-default form-group-default-select2">
+                  <!-- Using data-init-plugin='select2' automatically initializes a basic Select2 -->
+                  <select class="cs-select cs-skin-slide full-width" data-init-plugin="select2">
+                    <option disabled>Thématiques</option>
+                    <option>Lifestyle</option>
+                    <option>Mode</option>
+                    <option>Beauté/Cosmétique</option>
+                    <option>Beauté/Cosmétique Bio</option>
+                    <option>Décoration</option>
+                    <option>Kids</option>
+                    <option>Nourriture</option>
+                    <option>Luxe</option>
+                    <option>High Tech</option>
+                    <option>Voyage</option>
+                    <option>Gaming</option>
+                    <option>Musique</option>
+                    <option>Art & Culture</option>
+                    <option>Photographie</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <!-- Element intended to use with advance options -->
+                  <input type="hidden" id="mySelect2" class="full-width">
+                </div>
+              </form>
             </div>
             <div class="row">
               <button class="btn btn-tag btn-tag-rounded bg-keeniz white">Appliquer les filtres</button>
