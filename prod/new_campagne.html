@@ -287,6 +287,14 @@
                       <a data-toggle="tab" class="text-center fs-20" href="#tab2Insta"><i
                           class="fab fa-instagram"></i></a>
                     </li>
+                    <li class="active">
+                      <a data-toggle="tab" class="text-center fs-20 " href="#tab2Yt"><i
+                          class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" class="text-center fs-20" href="#tab2Blog"><i
+                          class="fas fa-blog"></i></a>
+                    </li>
                   </ul>
                   <div class="tab-content">
                     <div class="tab-pane active" id="tab2Fb">
@@ -737,8 +745,24 @@
     $(document).ready(function () {
       $('#datepicker').datepicker();
       $('#datepicker2').datepicker();
-      $('#summernote').summernote();
-      $('#summernote2').summernote();
+      $('#summernote').summernote({
+          toolbar: [
+            // [groupName, [list of button]]
+            ['style', ['bold', 'italic', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['insert', ['link', 'hr']]
+          ]
+        });
+      $('#summernote2').summernote({
+          toolbar: [
+            // [groupName, [list of button]]
+            ['style', ['bold', 'italic', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['insert', ['link', 'hr']]
+          ]
+        });
     });
   </script>
   <script>

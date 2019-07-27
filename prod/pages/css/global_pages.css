@@ -1706,7 +1706,7 @@ body.sidebar-visible .page-sidebar .sidebar-header .sidebar-header-controls {
 
 .page-sidebar {
   width: 280px;
-  background-color: #004FC5;
+  background-color: #1156E0;
   z-index: 1000;
   left: -210px;
   position: fixed;
@@ -1756,7 +1756,7 @@ body.sidebar-visible .page-sidebar .sidebar-header .sidebar-header-controls {
   display: block;
   height: 60px;
   line-height: 60px;
-  background-color: #004FC5;
+  background-color: #1156E0;
   color: #fff;
   width: 100%;
   padding: 0 20px;
@@ -3678,8 +3678,8 @@ Alternate buttons
 
 .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #004FC5;
-  border-color: #004FC5;
+  background-color: #1156E0;
+  border-color: #1156E0;
 }
 
 .btn-primary.active, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary.active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled):active:hover, .show .dropdown-toggle.btn-primary {
@@ -5721,7 +5721,7 @@ body>.pgn-wrapper {
   -webkit-backface-visibility: hidden;
   width: 100%;
   display: block;
-  background-color: #004FC5;
+  background-color: #1156E0;
   height: 0px;
   content: "";
   left: 0;
@@ -6575,7 +6575,7 @@ body>.pgn-wrapper {
     box-shadow: none;
   }
   .modal .modal-dialog {
-    width: 600px;
+    /* width: 600px; */
   }
   .modal .modal-sm {
     width: 300px;
@@ -7912,7 +7912,7 @@ form legend {
 }
 
 .radio.radio-success input[type="radio"]:checked+label:before {
-  border-color: #004FC5;
+  border-color: #1156E0;
 }
 
 .radio.radio-primary input[type="radio"]:checked+label:before {
@@ -14794,7 +14794,7 @@ Main components
 }
 
 .p-t-30 {
-  padding-top: 30px !important;
+  /* padding-top: 30px !important; */
 }
 
 .p-r-30 {
@@ -16907,8 +16907,8 @@ Main components
   display: flex;
   justify-content: center;
   margin: 30px auto;
-  background-color: #004FC5;
-  border-color: #004FC5;
+  background-color: #1156E0;
+  border-color: #1156E0;
 }
 
 .btn-connexion:hover {
@@ -16985,7 +16985,7 @@ Main components
 .button-row-ls button {
   padding: 5px 10px;
   margin: 0 2px;
-  color: #004FC5 !important;
+  color: #1156E0 !important;
   font-weight: bold;
   background-color: #6484d44d !important;
   border-color: #6484d44d !important;
@@ -16995,8 +16995,8 @@ Main components
   padding: 5px 10px;
   margin: 0 2px;
   color: white !important;
-  background-color: #004FC5 !important;
-  border-color: #004FC5 !important;
+  background-color: #1156E0 !important;
+  border-color: #1156E0 !important;
 }
 
 .button-row-packs {
@@ -17006,8 +17006,8 @@ Main components
 
 .button-row-packs button {
   display: flex;
-  background-color: #004FC5 !important;
-  border-color: #004FC5 !important;
+  background-color: #1156E0 !important;
+  border-color: #1156E0 !important;
   color: #fff !important;
   margin: 0 10px;
   padding: 5px 27px;
@@ -17051,7 +17051,7 @@ Main components
 }
 
 .bg-keeniz {
-  background-color: #004FC5 !important;
+  background-color: #1156E0 !important;
 }
 
 .progress-tag {
@@ -17098,21 +17098,21 @@ Main components
 
 .tab-header-buttons button {
   display: flex;
-  background-color: #004FC5 !important;
-  border-color: #004FC5 !important;
+  background-color: #1156E0 !important;
+  border-color: #1156E0 !important;
   color: #fff !important;
   margin: 0 10px;
   padding: 5px 27px;
 }
 
 .page-link {
-  color: #004FC5 !important;
+  color: #1156E0 !important;
 }
 
 .page-item.active .page-link {
   color: #fff !important;
-  background-color: #004FC5 !important;
-  border-color: #004FC5 !important;
+  background-color: #1156E0 !important;
+  border-color: #1156E0 !important;
 }
 
 .agency-container {
@@ -17264,7 +17264,7 @@ Main components
 }
 
 .blue {
-  background-color: #004FC5;
+  background-color: #1156E0;
   color: #fff;
   margin: 0 10px;
 }
@@ -17339,7 +17339,7 @@ Main components
 
 .followers {
   flex-direction: row;
-  background-color: #004FC5;
+  background-color: #1156E0;
   color: white;
 }
 
@@ -17525,7 +17525,7 @@ Main components
 
 .pay-top-part, .pay-left-part, .pay-right-part {
   background-color: #fff;
-  width: 95%;
+  width: 100%;
   border-radius: 20px;
   margin: 20px auto;
 }
@@ -17618,7 +17618,7 @@ Main components
 }
 
 .ptp-rs-c-rs {
-  background-color: #004FC5;
+  background-color: #1156E0;
   color: #fff;
   height: 100%;
   width: 100px;
@@ -17656,8 +17656,8 @@ Main components
 
 .f-right {
   float: right;
-  background-color: #004FC5 !important;
-  border-color: #004FC5 !important;
+  background-color: #1156E0 !important;
+  border-color: #1156E0 !important;
   color: #fff !important;
   padding: 7px 50px;
 }
@@ -17705,7 +17705,6 @@ Main components
 .result-card {
   border-radius: 5px;
   background-color: #fff;
-  box-shadow: 0 6px 20px -3px rgba(138, 138, 138, 0.27);
   margin: 0 0 50px 0;
 }
 
@@ -17770,7 +17769,7 @@ Main components
   margin: -29px 0 0 55%;
   padding: 16px 22px;
   border-radius: 30px;
-  border-color: #004FC5;
+  border-color: #1156E0;
 }
 
 .result-card #discover:hover, .result-card-inf #discover:hover {
@@ -17843,14 +17842,14 @@ Main components
 .result-bottom-row button {
   margin: 5px 3px;
   font-weight: bolder;
-  background-color: #004FC575;
-  color: #004FC5;
+  background-color: #1156E075;
+  color: #1156E0;
 }
 
 .result-bottom-row button:hover {
   margin: 5px 3px;
   font-weight: bolder;
-  background-color: #004FC5;
+  background-color: #1156E0;
   color: #fff;
 }
 
@@ -17875,7 +17874,7 @@ Main components
 .discover-project {
   width: 75px;
   height: 75px;
-  background-color: #004FC5;
+  background-color: #1156E0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17897,7 +17896,7 @@ Main components
 }
 
 .project-card-ls #project-in-progress {
-  width: 53%;
+  width: 60%;
   padding: 5px 12px;
   color: #089e08;
   font-weight: bold;
@@ -17950,6 +17949,10 @@ Main components
 
 .no-padding {
   padding: unset;
+}
+
+#no-padding-register {
+  padding-left: 0px!important;
 }
 
 .ap-double-stack-infos {
@@ -18079,7 +18082,7 @@ Main components
 
 .ap-icons-container i:hover {
   cursor: pointer;
-  color: #004FC5;
+  color: #1156E0;
 }
 
 .ap-bottom-stack #space-card {
@@ -18151,6 +18154,7 @@ Main components
   letter-spacing: 0.06em!important;
   text-transform: uppercase;
   font-weight: 500;
+  padding-top: 1rem;
 }
 
 .settings-col-three {
@@ -18182,10 +18186,11 @@ Main components
   height: 50px;
   display: flex;
   border: 1px solid #00000012;
+  margin-top: 1rem;
 }
 
 .sal-ls {
-  background-color: #004FC5;
+  background-color: #1156E0;
   width: 50px;
   display: flex;
   justify-content: center;
@@ -18295,8 +18300,8 @@ Main components
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 1px solid #004FC5;
-  color: #004FC5;
+  border: 1px solid #1156E0;
+  color: #1156E0;
 }
 
 .settings-warning span {
@@ -18348,7 +18353,7 @@ Main components
 
 .settings-sn-rs i:hover, .settings-sn-rs-both i:hover {
   cursor: pointer;
-  color: #004FC5;
+  color: #1156E0;
 }
 
 .settings-sn-rs, .settings-sn-rs-both {
@@ -18433,14 +18438,14 @@ Main components
 .campagne-tags button {
   margin-right: 1rem;
   border-radius: 25px;
-  color: #004FC5;
-  background-color: #004FC55c;
+  color: #1156E0;
+  background-color: #1156E05c;
   border-color: #fff;
 }
 
 .campagne-tags button:hover {
   color: #fff;
-  background-color: #004FC5;
+  background-color: #1156E0;
   border-color: #fff;
 }
 
@@ -18457,7 +18462,7 @@ Main components
   font-size: 16px;
   padding-left: 30px;
   font-weight: bold;
-  color: #004FC5;
+  color: #1156E0;
 }
 
 .moodboard-container img {
@@ -18494,6 +18499,7 @@ Main components
   padding: 15px 70px;
   position: fixed;
   margin: 0rem auto;
+  margin-left: 7%;
 }
 
 #classic-hover:hover {
@@ -18580,7 +18586,7 @@ Main components
 }
 
 .cpc-status-waiting {
-  color: #004FC5;
+  color: #1156E0;
   font-size: 1.2vw;
 }
 
@@ -18594,7 +18600,7 @@ Main components
 
 .cpc-icons i:hover {
   cursor: pointer;
-  color: #004FC5;
+  color: #1156E0;
 }
 
 .cpc-bot-part span {
@@ -18746,7 +18752,7 @@ Main components
 .po-list i {
   padding-right: 1rem;
   font-size: 20px;
-  color: #004FC5;
+  color: #1156E0;
 }
 
 .po-list li {
@@ -18762,7 +18768,7 @@ Main components
   width: 60%;
   height: 110px;
   box-shadow: 0 6px 20px 7px rgba(138, 138, 138, 0.27);
-  background-color: #004FC5;
+  background-color: #1156E0;
   padding: 24px 20px 5px 0;
 }
 
@@ -18827,7 +18833,7 @@ Main components
 }
 
 .option-ls.checkbox.check-primary input[type="checkbox"]:checked+label:before {
-  border-color: #004FC5!important;
+  border-color: #1156E0!important;
 }
 
 .more-options-container {
@@ -18938,7 +18944,7 @@ Main components
 }
 
 .scrollspy-dot#dot1 {
-  background: #004FC5;
+  background: #1156E0;
 }
 
 .scrollspy-dot#dot2 {
@@ -18965,14 +18971,14 @@ Main components
 
 .progress-bar {
   height: 0%;
-  background: #004FC5;
+  background: #1156E0;
   width: 4px;
   transition: none;
 }
 
 .progress-bar-p {
   height: 0%;
-  background: #004FC5;
+  background: #1156E0;
   width: 4px;
   transition: none;
 }
@@ -18996,6 +19002,7 @@ Main components
 .nc-datepicker-container {
   display: flex;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 #m-l-1r {
@@ -19011,12 +19018,13 @@ Main components
 .modal-message-header {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  background-color: #004FC5;
+  background-color: #1156E0;
   margin-bottom: 1rem;
+  /* border: 1px solid #1156E0; */
 }
 
 .modal-message-body {
-  border-radius: 25px!important;
+  border-radius: 30px!important;
   display: flex;
   flex-direction: column;
 }
@@ -19150,7 +19158,7 @@ Main components
 }
 
 #half-width-modal {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -19166,7 +19174,7 @@ Main components
 }
 
 .inf-action-rs.checkbox.check-primary input[type="checkbox"]:checked+label:before {
-  border-color: #004FC5!important;
+  border-color: #1156E0!important;
 }
 
 .modal-message-content textarea {
@@ -19265,7 +19273,7 @@ Main components
 
 .analyse-sn-rs i:hover {
   cursor: pointer;
-  color: #004FC5;
+  color: #1156E0;
 }
 
 .analyse-sn-rs {
@@ -19293,7 +19301,7 @@ Main components
 }
 
 .analyse-rs-pagination a.active {
-  background-color: #004FC5;
+  background-color: #1156E0;
   font-weight: bold;
   color: white;
   border-radius: 5px;
@@ -19355,7 +19363,7 @@ Main components
 .analyse-link .fas:hover, .fa-external-link-alt:hover {
   cursor: pointer;
   transition: all 0.25s ease;
-  color: #004FC5;
+  color: #1156E0;
 }
 
 .analyse-link a {
@@ -19399,19 +19407,19 @@ Main components
 }
 
 .custom-radio.checkbox.check-keeniz input[type="checkbox"]:checked+label:before {
-  border-color: #004FC5;
+  border-color: #1156E0;
 }
 
 .custom-radio.radio.check-keeniz input[type="radio"]:checked+label:before {
-  border-color: #004FC5;
+  border-color: #1156E0;
 }
 
 .checkbox.check-keeniz input[type="checkbox"]:checked+label:before {
-  border-color: #004FC5;
+  border-color: #1156E0;
 }
 
 .radio.check-keeniz input[type="radio"]:checked+label:before {
-  border-color: #004FC5;
+  border-color: #1156E0;
 }
 
 .custom-radio.radio label:before, .custom-radio.checkbox label:before {
@@ -19421,7 +19429,7 @@ Main components
 
 .custom-radio.radio label, .custom-radio.checkbox label {
   line-height: 40px;
-  padding-left: 40px;
+  padding-left: 55px;
 }
 
 .nc-form-container .note-editable {
@@ -19479,12 +19487,12 @@ Main components
 .separator-line {
   width: 100%;
   height: 6px;
-  background-color: #004FC5;
+  background-color: #1156E0;
   border-radius: 4px;
 }
 
 .nc-photo-container .banner-photo img {
-  border: 4px solid #004FC5;
+  border: 4px solid #1156E0;
 }
 
 .nc-form-container .option-container {
@@ -19531,7 +19539,7 @@ Main components
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #004FC5;
+  background-color: #1156E0;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -19541,7 +19549,7 @@ Main components
 
 .synchro-overall-container .center-flex-items .fa-sync-alt {
   font-size: 16px;
-  color: #004FC5;
+  color: #1156E0;
   padding-right: 0.5rem;
 }
 
@@ -19608,7 +19616,7 @@ Main components
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  color: #004FC5;
+  color: #1156E0;
 }
 
 .single-stat p {
@@ -19796,7 +19804,7 @@ Main components
 .register-img-container img {
   max-width: 100%;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -19859,7 +19867,7 @@ Main components
 
 .campagne-buttons-container {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   padding: 4rem 9rem 0 0rem;
 }
 
@@ -19879,6 +19887,20 @@ Main components
 #table-keeniz {
   padding: unset;
   border-radius: 25px;
+}
+
+#participate .note-editor {
+  padding-top: 1.5rem;
+}
+
+.btn-pay {
+  float: right;
+  width: 100%;
+  padding: 3rem 0 1rem 0;
+}
+
+.pay-left-part, .pay-right-part {
+  height: 100%;
 }
 
 @media (max-width: 1500px) {
@@ -19954,7 +19976,7 @@ Main components
   }
   .campagne-info-container {
     width: 90%;
-    margin-top: -240px;
+    margin-top: -314px;
     margin-left: 6%;
     position: absolute;
   }
